@@ -9,9 +9,9 @@ It is designed to be a lightweight, high-performance static site hosting:
 - 📥 Official Download Links (Coming Soon)
 - 🌓 Dark/Light Mode previews
 
-## � Key Links
+## Key Links
 
-- **Database Core**: [The-Andb/andb-core](https://github.com/The-Andb/andb-core)
+- **Andb Core**: [The-Andb/andb-core](https://github.com/The-Andb/andb-core)
 
 ## 🛠️ Development
 
