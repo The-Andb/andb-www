@@ -11,8 +11,7 @@ It is designed to be a lightweight, high-performance static site hosting:
 
 ## � Key Links
 
-- **Main Application Repository**: [ph4n4n/andb-ui](https://github.com/ph4n4n/andb-ui)
-- **Database Core**: [ph4n4n/andb-core](https://github.com/ph4n4n/andb-core)
+- **Database Core**: [The-Andb/andb-core](https://github.com/The-Andb/andb-core)
 
 ## 🛠️ Development
 
@@ -31,11 +30,12 @@ Simply open `index.html` in your browser to preview changes. No build step requi
 
 Screenshots in `screenshots/` are automatically generated from the main application using an Electron automation script to ensure they are always up-to-date with the latest UI.
 
-## � License
+## License
 
 This landing page content is Creative Commons (CC BY-NC-SA 4.0).
-The **Andb** application itself is proprietary software.
+The **Andb** application UI is proprietary software.
+The **Andb Core** logic is open-source under the **AGPLv3** license.
 
 ---
 
-**[Andb](https://github.com/ph4n4n/andb-ui)** — _Database Migrations, Reimagined._
+**[Andb](https://github.com/The-Andb/andb-core)** — _Database Migrations, Reimagined._
