@@ -9,6 +9,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      securityLevel: 'loose',
+      fontFamily: 'Inter',
+      flowchart: {
+        htmlLabels: true,
+        curve: 'basis',
+        useMaxWidth: true,
+        nodeSpacing: 60,
+        rankSpacing: 80
+      }
+    });
+  </script>
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <style>
     body {
@@ -200,6 +216,13 @@
     body.light-mode .nav-button:hover {
       background-color: rgba(0, 0, 0, 0.1);
     }
+
+    .mermaid svg {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      min-height: 500px;
+    }
   </style>
 </head>
 
@@ -229,7 +252,12 @@
         Features
         <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all group-hover:w-full"></span>
       </a>
-      <a href="guide.html"
+      <a href="#architecture"
+        class="hover:text-white dark:hover:text-white light:hover:text-black transition-colors relative group">
+        Architecture
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all group-hover:w-full"></span>
+      </a>
+      <a href="#guide"
         class="hover:text-white dark:hover:text-white light:hover:text-black transition-colors relative group">
         Guide
         <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all group-hover:w-full"></span>
@@ -250,11 +278,19 @@
   </nav>
 
   <!-- Hero Section -->
-  <main class="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-4 pt-16 pb-20">
-    <div
-      class="inline-flex items-center px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-10 backdrop-blur-md">
-      <span class="flex h-2.5 w-2.5 rounded-full bg-indigo-400 mr-2.5 animate-ping"></span>
-      v2.1.1 is now live
+  <main id="features"
+    class="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-4 pt-16 pb-20">
+    <div class="flex flex-row flex-wrap justify-center items-center gap-4 mb-12">
+      <div
+        class="inline-flex items-center px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium backdrop-blur-md shadow-lg shadow-indigo-500/10">
+        <span class="flex h-2.5 w-2.5 rounded-full bg-indigo-400 mr-2.5 animate-ping"></span>
+        v2.1.1 is now live
+      </div>
+      <a href="https://github.com/The-Andb/andb" target="_blank"
+        class="inline-flex items-center px-4 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-green-400 text-sm font-medium backdrop-blur-md hover:bg-green-500/20 transition-all shadow-lg shadow-green-500/10 group">
+        <i data-lucide="github" class="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform"></i>
+        100% Open Source
+      </a>
     </div>
 
     <h1 class="text-5xl md:text-8xl font-black tracking-tight mb-8 leading-tight">
@@ -291,7 +327,7 @@
     </div>
 
     <div class="mb-10">
-      <a href="guide.html"
+      <a href="#guide"
         class="text-sm text-slate-400 hover:text-indigo-400 transition-colors flex items-center justify-center gap-2 group">
         <i data-lucide="help-circle"
           class="w-4 h-4 text-indigo-500/50 group-hover:text-indigo-500 transition-colors"></i>
@@ -329,6 +365,10 @@
           </h4>
           <p class="text-sm text-slate-400 leading-relaxed mb-4 font-light">
             Seeing a "damaged" error? This is a common macOS Gatekeeper protection for non-notarized apps.
+            <span class="text-slate-200 font-medium">Being Open Source, our code is fully transparent and
+              auditable</span> — you can verify the safety of this command on our GitHub.
+          </p>
+          <p class="text-sm text-slate-400 leading-relaxed mb-4 font-light">
             To fix it, open <span class="text-indigo-400 font-medium">Terminal.app</span> and run:
           </p>
 
@@ -351,7 +391,7 @@
               <i data-lucide="check-circle" class="w-3 h-3 text-green-500/50"></i>
               This removes the quarantine attribute and allows the app to launch normally.
             </p>
-            <a href="guide.html"
+            <a href="#guide"
               class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 rounded-xl text-sm font-semibold transition-all border border-indigo-500/20 hover:border-indigo-500/40 group/guide">
               View full setup guide
               <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover/guide:translate-x-1"></i>
@@ -362,25 +402,66 @@
     </div>
 
   </main>
-  <script>
-    function copyFixCommand(btn) {
-      const cmd = "xattr -cr /Applications/The\\ Andb.app";
-      navigator.clipboard.writeText(cmd);
 
-      const tooltip = btn.querySelector('#copy-text');
-      const icon = btn.querySelector('#copy-icon');
+  <!-- INTERACTIVE VIDEO DEMO SECTION -->
+  <section id="demo" class="w-full max-w-5xl mx-auto mb-32 relative px-4 group perspective-container">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4">See it in Action</h2>
+      <p class="text-xl text-slate-400 light-text-slate-600 max-w-2xl mx-auto">Experience the most intuitive way to
+        visualize, compare, and sync your database schemas.</p>
+    </div>
 
-      tooltip.style.opacity = '1';
-      tooltip.style.top = '-45px';
-      icon.classList.add('text-green-400');
+    <div
+      class="relative bg-[#0f172a] rounded-[2rem] border border-slate-700/50 shadow-2xl overflow-hidden aspect-video transform transition-all hover:scale-[1.01] duration-500 group/video">
+      <!-- Video Placeholder -->
+      <div class="absolute inset-0 bg-slate-900/40 flex flex-col items-center justify-center gap-6">
+        <div
+          class="w-24 h-24 bg-indigo-500 rounded-full flex items-center justify-center shadow-2xl shadow-indigo-500/50 group-hover/video:scale-110 transition-transform cursor-pointer relative">
+          <div class="absolute inset-0 bg-indigo-400 animate-ping rounded-full opacity-20"></div>
+          <i data-lucide="play" class="w-10 h-10 text-white fill-current ml-1 relative z-10"></i>
+        </div>
+        <div class="text-center">
+          <span
+            class="text-slate-400 font-mono text-sm uppercase tracking-widest bg-slate-900/80 px-6 py-2 rounded-full border border-white/5 backdrop-blur-md">
+            demo_preview.mp4
+          </span>
+          <p class="mt-4 text-xs text-slate-500 italic">User is currently recording... placeholder ready.</p>
+        </div>
+      </div>
 
-      setTimeout(() => {
-        tooltip.style.opacity = '0';
-        tooltip.style.top = '-40px';
-        icon.classList.remove('text-green-400');
-      }, 2000);
-    }
-  </script>
+      <!-- Overlay decoration -->
+      <div class="absolute top-4 left-4 flex gap-2">
+        <div class="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/40"></div>
+        <div class="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/40"></div>
+        <div class="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/40"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D CAROUSEL SECTION -->
+  <div class="w-full max-w-[1600px] mx-auto relative perspective-container mt-10 px-4">
+
+    <!-- CONTROLS: Large Side Carets -->
+    <button onclick="moveLeft()"
+      class="nav-button absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 p-4 rounded-full bg-slate-900/50 backdrop-blur-md border border-slate-700/50 text-white shadow-2xl group cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <i data-lucide="chevron-left" class="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-1 transition-transform"></i>
+    </button>
+
+    <button onclick="moveRight()"
+      class="nav-button absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 p-4 rounded-full bg-slate-900/50 backdrop-blur-md border border-slate-700/50 text-white shadow-2xl group cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <i data-lucide="chevron-right" class="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-1 transition-transform"></i>
+    </button>
+
+    <!-- TRACK -->
+    <div id="carousel-track" class="carousel-track">
+      <!-- Items injected via JS -->
+    </div>
+
+    <!-- DOTS -->
+    <div id="carousel-dots" class="flex justify-center gap-3 mt-10">
+      <!-- Dots injected via JS -->
+    </div>
+  </div>
 
   <!-- OUR STORY SECTION -->
   <section class="max-w-6xl mx-auto px-6 mb-32 mt-20 relative">
@@ -413,10 +494,6 @@
             <a href="https://github.com/The-Andb"
               class="p-3 bg-white/5 rounded-2xl hover:bg-white/10 transition-all hover:scale-110">
               <i data-lucide="github" class="w-5 h-5 text-slate-400"></i>
-            </a>
-            <a href="https://linkedin.com"
-              class="p-3 bg-white/5 rounded-2xl hover:bg-white/10 transition-all hover:scale-110">
-              <i data-lucide="linkedin" class="w-5 h-5 text-slate-400"></i>
             </a>
           </div>
         </div>
@@ -462,185 +539,6 @@
       </div>
     </div>
   </section>
-
-  <!-- INTERACTIVE DEMO SECTION -->
-  <div class="w-full max-w-5xl mx-auto mb-32 relative px-4 group perspective-container">
-
-    <!-- Blob behind -->
-    <div
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-r from-indigo-500/20 to-purple-500/20 blur-[100px] rounded-full">
-    </div>
-
-    <!-- App Window -->
-    <div
-      class="relative bg-[#0f172a] rounded-xl border border-slate-700/50 shadow-2xl overflow-hidden transform transition-all hover:scale-[1.01] duration-500 flex flex-col h-[500px]">
-
-      <!-- Window Ribbon/Header -->
-      <div class="h-10 bg-slate-900 border-b border-slate-800 flex items-center px-4 justify-between shrink-0">
-        <div class="flex items-center gap-2">
-          <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-          <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-          <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
-        </div>
-        <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
-          <span class="flex items-center gap-1 text-indigo-400"><i data-lucide="database" class="w-3 h-3"></i>
-            production</span>
-          <i data-lucide="arrow-right" class="w-3 h-3 opacity-50"></i>
-          <span class="flex items-center gap-1 text-green-400"><i data-lucide="server" class="w-3 h-3"></i>
-            staging</span>
-        </div>
-
-
-        <div class="w-16"></div> <!-- spacer -->
-      </div>
-
-      <!-- Toolbar -->
-      <div class="h-12 bg-slate-800/50 border-b border-slate-700/50 flex items-center px-4 justify-between shrink-0">
-        <div class="flex items-center gap-4">
-          <h2 class="text-sm font-bold text-slate-200 flex items-center gap-2"><i data-lucide="git-merge"
-              class="w-4 h-4 text-indigo-400"></i> Compare Results</h2>
-          <span
-            class="px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 text-[10px] font-bold border border-indigo-500/30">1
-            Change Pending</span>
-        </div>
-
-        <button id="demo-migrate-btn"
-          class="flex items-center gap-2 px-4 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-lg shadow-indigo-500/20 active:scale-95 group/btn relative overflow-hidden">
-          <i data-lucide="zap" class="w-3 h-3 fill-current"></i>
-          <span id="demo-btn-text">Migrate</span>
-          <!-- Loading Spinner (Hidden by default) -->
-          <div id="demo-btn-spinner" class="absolute inset-0 bg-indigo-600 flex items-center justify-center hidden">
-            <i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>
-          </div>
-        </button>
-      </div>
-
-      <!-- Main Content (Columns) -->
-      <div class="flex flex-1 overflow-hidden font-mono text-xs">
-
-        <!-- Sidebar -->
-        <div class="w-48 bg-slate-900 border-r border-slate-800 flex flex-col py-2">
-          <div class="px-3 py-1 text-[10px] uppercase tracking-widest text-slate-500 font-bold mb-1">Tables</div>
-          <!-- Items -->
-          <div class="px-2 space-y-0.5">
-            <div
-              class="flex items-center justify-between px-2 py-2 rounded text-slate-400 hover:bg-slate-800/50 cursor-pointer">
-              <span class="flex items-center gap-2"><i data-lucide="table" class="w-3 h-3 opacity-50"></i>
-                users</span>
-              <i data-lucide="check-circle-2" class="w-3 h-3 text-slate-600"></i>
-            </div>
-            <div
-              class="flex items-center justify-between px-2 py-2 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 cursor-pointer relative overflow-hidden">
-              <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-indigo-500"></div>
-              <span class="flex items-center gap-2"><i data-lucide="table" class="w-3 h-3"></i> orders</span>
-              <i id="demo-status-icon" data-lucide="alert-circle" class="w-3 h-3 text-amber-400"></i>
-            </div>
-            <div
-              class="flex items-center justify-between px-2 py-2 rounded text-slate-400 hover:bg-slate-800/50 cursor-pointer">
-              <span class="flex items-center gap-2"><i data-lucide="table" class="w-3 h-3 opacity-50"></i>
-                products</span>
-              <i data-lucide="check-circle-2" class="w-3 h-3 text-slate-600"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- Diff View -->
-        <div class="flex-1 flex flex-col bg-[#0b1120] relative">
-          <!-- Tabs -->
-          <div class="h-8 flex border-b border-slate-800">
-            <div
-              class="px-4 py-2 border-r border-slate-800 text-indigo-400 bg-slate-900/50 flex items-center gap-2 text-[10px] font-bold">
-              <i data-lucide="file-code" class="w-3 h-3"></i> orders.sql
-            </div>
-          </div>
-
-          <!-- Code Area -->
-          <div class="flex-1 flex p-4 gap-4 overflow-hidden relative">
-
-            <!-- Line Numbers -->
-            <div class="flex flex-col text-slate-600 text-right select-none space-y-1">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-              <div>4</div>
-              <div>5</div>
-              <div>6</div>
-            </div>
-
-            <!-- Code Content -->
-            <div class="flex-1 font-mono text-slate-300 space-y-1 relative">
-              <div class="text-purple-400">CREATE TABLE <span class="text-yellow-200">orders</span> (</div>
-              <div class="pl-4">id <span class="text-orange-300">SERIAL PRIMARY KEY</span>,</div>
-              <div class="pl-4">user_id <span class="text-orange-300">INTEGER REFERENCES</span> users(id),</div>
-              <div class="pl-4 flex items-center">
-                <span>total_amount <span class="text-orange-300">DECIMAL(10,2)</span>,</span>
-              </div>
-              <!-- Diff Line -->
-              <div id="demo-diff-line" class="pl-4 relative transition-all duration-700">
-                <div
-                  class="absolute -left-8 -right-4 top-0 bottom-0 bg-green-500/20 border-l-2 border-green-500 opacity-100 transition-opacity duration-500"
-                  id="diff-highlight"></div>
-                <span class="text-green-400">+ status <span class="text-orange-300">VARCHAR(50) DEFAULT</span>
-                  'pending'</span>
-              </div>
-              <div class="text-purple-400">);</div>
-
-              <!-- Success Overlay -->
-              <div id="demo-success-overlay"
-                class="absolute inset-0 bg-[#0b1120]/90 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 z-10">
-                <div class="text-center transform transition-transform scale-90" id="demo-success-msg">
-                  <div
-                    class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-green-500/30">
-                    <i data-lucide="check" class="w-8 h-8 text-green-400"></i>
-                  </div>
-                  <h3 class="text-lg font-bold text-white mb-1">Synced Successfully!</h3>
-                  <p class="text-slate-400">Schema is now identical.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Simulate Cursor -->
-      <div id="demo-cursor"
-        class="absolute w-6 h-6 z-50 pointer-events-none transition-all duration-700 ease-in-out drop-shadow-xl"
-        style="top: 100px; left: 100px;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5.65376 12.3673H5.46026L5.31717 12.4976L0.500002 16.8829L0.500002 1.19169L11.7841 12.3673H5.65376Z"
-            fill="white" stroke="black" stroke-width="1" />
-        </svg>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- 3D CAROUSEL SECTION -->
-  <div class="w-full max-w-[1600px] mx-auto relative perspective-container mt-10 px-4">
-
-    <!-- CONTROLS: Large Side Carets -->
-    <button onclick="moveLeft()"
-      class="nav-button absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 p-4 rounded-full bg-slate-900/50 backdrop-blur-md border border-slate-700/50 text-white shadow-2xl group cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      <i data-lucide="chevron-left" class="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-1 transition-transform"></i>
-    </button>
-
-    <button onclick="moveRight()"
-      class="nav-button absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 p-4 rounded-full bg-slate-900/50 backdrop-blur-md border border-slate-700/50 text-white shadow-2xl group cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      <i data-lucide="chevron-right" class="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-1 transition-transform"></i>
-    </button>
-
-    <!-- TRACK -->
-    <div id="carousel-track" class="carousel-track">
-      <!-- Items injected via JS -->
-    </div>
-
-    <!-- DOTS -->
-    <div id="carousel-dots" class="flex justify-center gap-3 mt-10">
-      <!-- Dots injected via JS -->
-    </div>
-  </div>
-
 
   <!-- PROJECT MILESTONES SECTION -->
   <div class="w-full max-w-4xl mx-auto mt-32 px-6">
@@ -717,6 +615,268 @@
 
     </div>
   </div>
+  <!-- ECOSYSTEM & ARCHITECTURE SECTION -->
+  <section id="architecture" class="w-full max-w-[1600px] mx-auto px-6 py-32 relative overflow-hidden">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6">Designed for Reliability</h2>
+      <p class="text-xl text-slate-400 light-text-slate-600 max-w-3xl mx-auto">
+        The Andb ecosystem is built with a modular "Engine-UI-CLI" architecture, ensuring stability and speed regardless
+        of how you prefer to work.
+      </p>
+    </div>
+
+    <div class="space-y-12">
+      <!-- Top: Components Info -->
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Core -->
+        <div class="glass-card p-6 rounded-3xl border-indigo-500/20 hover:border-indigo-500/40 transition-all group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="p-3 bg-indigo-500/10 rounded-2xl text-indigo-400">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white light:text-slate-900">andb-core</h3>
+          </div>
+          <p class="text-slate-400 light-text-slate-600 leading-relaxed mb-4">
+            The universal engine. Handles database connectors, atomic comparison logic, and script generation. Pluggable
+            DataStore for both Disk and Memory.
+          </p>
+          <a href="https://github.com/The-Andb/andb-core"
+            class="inline-flex items-center text-indigo-400 text-sm font-bold hover:underline gap-1">
+            Explore Engine <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- CLI -->
+        <div class="glass-card p-6 rounded-3xl border-slate-700/50 hover:border-indigo-500/40 transition-all group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="p-3 bg-slate-800 rounded-2xl text-slate-400 group-hover:text-indigo-400 transition-colors">
+              <i data-lucide="terminal" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white light:text-slate-900">andb-cli</h3>
+          </div>
+          <p class="text-slate-400 light-text-slate-600 leading-relaxed mb-4">
+            A thin command-line wrapper for speed and automation. Perfect for CI/CD pipelines, staging syncs, and
+            headless environments.
+          </p>
+          <a href="https://github.com/The-Andb/andb-cli"
+            class="inline-flex items-center text-indigo-400 text-sm font-bold hover:underline gap-1">
+            View CLI <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- Desktop -->
+        <div class="glass-card p-6 rounded-3xl border-slate-700/50 hover:border-indigo-500/40 transition-all group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="p-3 bg-slate-800 rounded-2xl text-slate-400 group-hover:text-indigo-400 transition-colors">
+              <i data-lucide="monitor" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white light:text-slate-900">Andb (GUI)</h3>
+          </div>
+          <p class="text-slate-400 light-text-slate-600 leading-relaxed mb-4">
+            The premium desktop experience. Visualize your entire database infrastructure with an intuitive, secure
+            interface.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom: Diagram (Full Width) -->
+      <div class="w-full">
+        <div class="glass-card p-4 md:p-8 rounded-[3rem] border-indigo-500/10 bg-slate-900/40 relative">
+          <!-- Background Decoration -->
+          <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 rounded-[3rem]"></div>
+
+          <div class="relative z-10 flex justify-center" id="arch-mermaid-container">
+            <div class="mermaid">
+              flowchart LR
+              %% =========================
+              %% STRUCTURE
+              %% =========================
+              Src[("SOURCE DB")]
+              Dst[("TARGET DB")]
+
+              subgraph ANDB["THE ANDB"]
+              direction TB
+
+              UI["UI"]
+              CLI["CLI"]
+              Core["CORE<br />Diff & Migration Engine"]
+
+              UI <--> Core
+                CLI <--> Core
+                  end
+
+                  Src -->|Read schema| Core
+                  Core -->|Generate migration| Dst
+
+                  %% =========================
+                  %% NIGHT OWL STYLE
+                  %% =========================
+                  style Src fill:#011627,stroke:#22da6e,stroke-width:2px,color:#d6deeb
+                  style Dst fill:#011627,stroke:#ecc48d,stroke-width:2px,color:#d6deeb
+
+                  style ANDB fill:#011627,stroke:#82aaff,stroke-width:2.5px,color:#d6deeb
+
+                  style UI fill:#01111d,stroke:#7fdbca,stroke-width:1.5px,color:#c792ea,rx:8,ry:8
+                  style CLI fill:#01111d,stroke:#7fdbca,stroke-width:1.5px,color:#c792ea,rx:8,ry:8
+
+                  style Core fill:#0b253a,stroke:#82aaff,stroke-width:3px,color:#d6deeb,rx:12,ry:12
+
+            </div>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-white/5 flex flex-wrap gap-6 justify-center">
+            <div class="flex items-center gap-2 text-xs text-slate-500 uppercase tracking-widest font-bold">
+              <span class="w-2 h-2 rounded-full bg-indigo-500"></span> Command Flow
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-500 uppercase tracking-widest font-bold">
+              <span class="w-2 h-2 rounded-full bg-green-500"></span> Data Connection
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- USER GUIDE SECTION -->
+  <section id="guide" class="max-w-7xl mx-auto px-6 py-32 relative">
+    <div class="text-center mb-24">
+      <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6">Getting Started Guide</h2>
+      <p class="text-xl text-slate-400 light-text-slate-600 max-w-3xl mx-auto">
+        Follow these simple steps to set up your environment and start migrating databases like a pro.
+      </p>
+    </div>
+
+    <!-- Steps Container -->
+    <div class="space-y-32">
+
+      <!-- Step 1: Bypass Gatekeeper -->
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-6">
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-indigo-500/20">
+              1
+            </div>
+            <h3 class="text-3xl font-bold text-white light:text-slate-900">Bypass macOS Gatekeeper</h3>
+          </div>
+          <p class="text-slate-400 light-text-slate-600 leading-relaxed text-lg">
+            Since <span class="text-white light:text-slate-900 font-medium">The Andb</span> is built by an independent
+            developer, macOS Gatekeeper might block it initially. This is a standard security protocol.
+          </p>
+          <div class="glass-card p-6 rounded-2xl border-indigo-500/20 bg-slate-900/40">
+            <h4 class="text-xs font-bold text-slate-500 mb-3 uppercase tracking-widest">Run in Terminal:</h4>
+            <div class="flex items-center justify-between gap-4">
+              <code class="text-indigo-400 text-sm font-mono break-all">xattr -cr /Applications/The\ Andb.app</code>
+              <button onclick="copyFixCommand(this)" class="p-2 hover:bg-indigo-500/10 rounded-lg transition-all">
+                <i data-lucide="copy" class="w-4 h-4 text-indigo-400"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
+          <div
+            class="absolute inset-0 bg-indigo-500/20 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+          </div>
+          <div
+            class="relative glass-card aspect-video rounded-3xl overflow-hidden border-slate-700/50 flex flex-col items-center justify-center text-slate-600">
+            <i data-lucide="terminal" class="w-16 h-16 mb-4 opacity-20"></i>
+            <span class="text-xs font-mono uppercase tracking-widest opacity-40">Terminal Fix Screenshot</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Configure Connections -->
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 relative group">
+          <div
+            class="absolute inset-0 bg-purple-500/20 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+          </div>
+          <div
+            class="relative glass-card aspect-video rounded-3xl overflow-hidden border-slate-700/50 flex flex-col items-center justify-center text-slate-600">
+            <i data-lucide="database" class="w-16 h-16 mb-4 opacity-20"></i>
+            <span class="text-xs font-mono uppercase tracking-widest opacity-40">Connections Screenshot</span>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 space-y-6">
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-indigo-500/20">
+              2
+            </div>
+            <h3 class="text-3xl font-bold text-white light:text-slate-900">Configure Connections</h3>
+          </div>
+          <p class="text-slate-400 light-text-slate-600 leading-relaxed text-lg">
+            Add your source and target databases in the <span
+              class="text-white light:text-slate-900 font-medium">Settings</span>. Currently supporting MySQL/MariaDB
+            with PostgreSQL coming soon.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-3 text-slate-300 light:text-slate-700">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-indigo-500"></i>
+              Support for Host, Port, SSH Tunnels, and SSL
+            </li>
+            <li class="flex items-center gap-3 text-slate-300 light:text-slate-700">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-indigo-500"></i>
+              Built-in connection tester
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 3: Sync & Migrate -->
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-6">
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-indigo-500/20">
+              3
+            </div>
+            <h3 class="text-3xl font-bold text-white light:text-slate-900">Sync & Migrate</h3>
+          </div>
+          <p class="text-slate-400 light-text-slate-600 leading-relaxed text-lg">
+            The magic happens here. Select your environment pair and compare schemas instantly. Review SQL changes
+            before applying.
+          </p>
+          <div class="p-6 rounded-2xl bg-indigo-500/5 border border-indigo-500/20">
+            <p class="text-indigo-300 light:text-indigo-600 font-medium italic">
+              "Never guess what changed between Dev and Prod again. Visual diffs give you 100% confidence."
+            </p>
+          </div>
+        </div>
+        <div class="relative group">
+          <div
+            class="absolute inset-0 bg-green-500/10 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+          </div>
+          <div
+            class="relative glass-card aspect-video rounded-3xl overflow-hidden border-slate-700/50 flex flex-col items-center justify-center text-slate-600">
+            <i data-lucide="zap" class="w-16 h-16 mb-4 opacity-20"></i>
+            <span class="text-xs font-mono uppercase tracking-widest opacity-40">Sync Screenshot</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  </main>
+  <script>
+    function copyFixCommand(btn) {
+      const cmd = "xattr -cr /Applications/The\\ Andb.app";
+      navigator.clipboard.writeText(cmd);
+
+      const tooltip = btn.querySelector('#copy-text');
+      const icon = btn.querySelector('#copy-icon');
+
+      tooltip.style.opacity = '1';
+      tooltip.style.top = '-45px';
+      icon.classList.add('text-green-400');
+
+      setTimeout(() => {
+        tooltip.style.opacity = '0';
+        tooltip.style.top = '-40px';
+        icon.classList.remove('text-green-400');
+      }, 2000);
+    }
+  </script>
 
   </div>
   </div>
@@ -792,6 +952,14 @@
         document.querySelectorAll('.text-slate-600').forEach(el => el.classList.replace('text-slate-600', 'text-slate-300'));
       }
 
+      // Update Mermaid theme
+      if (typeof mermaid !== 'undefined') {
+        const mermaidTheme = isLight ? 'default' : 'dark';
+        mermaid.initialize({ theme: mermaidTheme });
+        // Re-render mermaid is complex in some versions, but usually initialize + refresh works
+        // For simplicity, we can reload or use specific CSS
+      }
+
       updateCarousel(); // Re-render carousel images
     });
 
@@ -799,10 +967,11 @@
     /* --- CAROUSEL LOGIC --- */
     const screenshots = [
       { src: './screenshots/dashboard.png', srcLight: './screenshots/dashboard-light.png', title: 'Dashboard', desc: 'Operational Overview' },
-      { src: './screenshots/compare.png', srcLight: './screenshots/compare-light.png', title: 'Comparison', desc: 'Diff & Sync Schemas' },
+      { src: './screenshots/settings.png', srcLight: './screenshots/settings-light.png', title: 'Settings', desc: 'Manage Connections' },
       { src: './screenshots/schema.png', srcLight: './screenshots/schema-light.png', title: 'Schema Explorer', desc: 'Navigate Database Objects' },
+      { src: './screenshots/compare.png', srcLight: './screenshots/compare-light.png', title: 'Comparison', desc: 'Diff & Sync Schemas' },
+      { src: './screenshots/compare-detail.png', srcLight: './screenshots/compare-detail-light.png', title: 'Comparison Detail', desc: 'Diff & Sync Schemas' },
       { src: './screenshots/history.png', srcLight: './screenshots/history-light.png', title: 'History', desc: 'Version Control for DBs' },
-      { src: './screenshots/settings.png', srcLight: './screenshots/settings-light.png', title: 'Settings', desc: 'Manage Connections' }
     ];
 
     const track = document.getElementById('carousel-track');
@@ -833,13 +1002,7 @@
 
         card.innerHTML = `
                     <div class="w-full h-full relative bg-slate-900 border border-slate-700/50 rounded-xl overflow-hidden shadow-2xl">
-                         <!-- macOS Window Controls Decoration (Restored for frameless screenshots) -->
-                        <div class="h-6 bg-slate-800/80 w-full absolute top-0 left-0 flex items-center px-4 space-x-2 z-10 border-b border-white/5">
-                            <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-                            <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-                            <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
-                        </div>
-                        <img src="${imgSrc}" alt="${item.title}" class="w-full h-full object-cover pt-6">
+                        <img src="${imgSrc}" alt="${item.title}" class="w-full h-full object-cover">
                     </div>
                 `;
 
@@ -902,101 +1065,6 @@
     track.addEventListener('mouseenter', () => clearInterval(autoPlay));
     track.addEventListener('mouseleave', () => autoPlay = setInterval(moveRight, 5000));
 
-
-    /* --- INTERACTIVE DEMO LOGIC --- */
-    function runDemoAnimation() {
-      const cursor = document.getElementById('demo-cursor');
-      const btn = document.getElementById('demo-migrate-btn');
-      const btnText = document.getElementById('demo-btn-text');
-      const btnSpinner = document.getElementById('demo-btn-spinner');
-      const statusIcon = document.getElementById('demo-status-icon');
-      const successOverlay = document.getElementById('demo-success-overlay');
-      const successMsg = document.getElementById('demo-success-msg');
-      const diffLine = document.getElementById('demo-diff-line');
-      const diffHighlight = document.getElementById('diff-highlight');
-
-      if (!cursor || !btn) return;
-
-      const resetState = () => {
-        // Reset UI to 'Difference Found' state
-        successOverlay.classList.remove('opacity-100', 'pointer-events-auto');
-        successOverlay.classList.add('opacity-0', 'pointer-events-none');
-
-        statusIcon.setAttribute('data-lucide', 'alert-circle');
-        statusIcon.classList.replace('text-green-500', 'text-amber-400');
-        statusIcon.parentElement.classList.replace('text-green-300', 'text-indigo-300'); // border/text reset
-        lucide.createIcons(); // refresh icon
-
-        diffLine.classList.remove('opacity-0');
-        diffHighlight.classList.remove('opacity-0');
-
-        btnText.innerText = 'Migrate';
-        btnSpinner.classList.add('hidden');
-
-        // Move cursor to starting 'idle' pos
-        cursor.style.transform = 'translate(0, 0)';
-        cursor.style.top = '300px';
-        cursor.style.left = '100px';
-      };
-
-      const sequence = async () => {
-        resetState();
-        await new Promise(r => setTimeout(r, 1000));
-
-        // 1. Move Cursor to Button
-        const btnRect = btn.getBoundingClientRect();
-        const container = btn.closest('.relative'); // The main relative container
-        const containerRect = container.getBoundingClientRect();
-
-        // Calculate relative position for cursor
-        const targetLeft = btnRect.left - containerRect.left + (btnRect.width / 2);
-        const targetTop = btnRect.top - containerRect.top + (btnRect.height / 2);
-
-        cursor.style.top = `${targetTop}px`;
-        cursor.style.left = `${targetLeft}px`;
-
-        await new Promise(r => setTimeout(r, 800));
-
-        // 2. Click Effect
-        btn.classList.add('scale-95');
-        await new Promise(r => setTimeout(r, 150));
-        btn.classList.remove('scale-95');
-
-        // 3. Loading State
-        btnText.innerText = 'Syncing...';
-        btnSpinner.classList.remove('hidden');
-
-        await new Promise(r => setTimeout(r, 1500));
-
-        // 4. Success State
-        btnSpinner.classList.add('hidden');
-        btnText.innerText = 'Done';
-
-        successOverlay.classList.remove('opacity-0', 'pointer-events-none');
-        successOverlay.classList.add('opacity-100', 'pointer-events-auto');
-        successMsg.classList.remove('scale-90');
-        successMsg.classList.add('scale-100');
-
-        statusIcon.setAttribute('data-lucide', 'check-circle-2');
-        statusIcon.classList.replace('text-amber-400', 'text-green-500');
-        lucide.createIcons();
-
-        // Move cursor away
-        cursor.style.top = '400px';
-        cursor.style.left = '600px';
-
-        await new Promise(r => setTimeout(r, 3000));
-
-        // Loop
-        requestAnimationFrame(sequence);
-      };
-
-      // Start loop
-      sequence();
-    }
-
-    // Start slightly delayed to let icons load
-    setTimeout(runDemoAnimation, 1000);
 
   </script>
 </body>
