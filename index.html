@@ -95,8 +95,8 @@
     .carousel-track {
       position: relative;
       transform-style: preserve-3d;
-      height: 600px;
-      /* Increased height for bigger images */
+      height: 700px;
+      /* Increased height to avoid clipping on large screens */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -104,21 +104,17 @@
 
     .carousel-item {
       position: absolute;
-      width: 65%;
-      /* Optimized width */
+      width: 80%;
       max-width: 1000px;
       aspect-ratio: 16/10;
-      transition: all 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+      transition: all 0.7s cubic-bezier(0.4, 0.0, 0.2, 1);
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
-      background: #1e293b;
       cursor: pointer;
     }
 
     body.light-mode .carousel-item {
-      background: #e2e8f0;
-      box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.15);
+      background: transparent;
     }
 
     /* Active (Center) */
@@ -126,8 +122,7 @@
       z-index: 50;
       opacity: 1;
       transform: translateX(0) scale(1) translateZ(0);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 0 60px rgba(99, 102, 241, 0.3);
+      box-shadow: 0 0 80px rgba(99, 102, 241, 0.4);
     }
 
     body.light-mode .carousel-item.active {
@@ -140,8 +135,8 @@
     .carousel-item.prev {
       z-index: 40;
       opacity: 0.6;
-      transform: translateX(-55%) scale(0.8) rotateY(25deg) translateZ(-200px);
-      filter: brightness(0.5);
+      transform: translateX(-50%) scale(0.85) rotateY(15deg) translateZ(-250px);
+      filter: brightness(0.4);
     }
 
     body.light-mode .carousel-item.prev {
@@ -150,9 +145,9 @@
     }
 
     .carousel-item.prev:hover {
-      opacity: 0.8;
+      opacity: 0.85;
       filter: brightness(0.8);
-      transform: translateX(-53%) scale(0.82) rotateY(22deg) translateZ(-150px);
+      transform: translateX(-48%) scale(0.87) rotateY(12deg) translateZ(-200px);
     }
 
     body.light-mode .carousel-item.prev:hover {
@@ -164,8 +159,8 @@
     .carousel-item.next {
       z-index: 40;
       opacity: 0.6;
-      transform: translateX(55%) scale(0.8) rotateY(-25deg) translateZ(-200px);
-      filter: brightness(0.5);
+      transform: translateX(50%) scale(0.85) rotateY(-15deg) translateZ(-250px);
+      filter: brightness(0.4);
     }
 
     body.light-mode .carousel-item.next {
@@ -174,9 +169,9 @@
     }
 
     .carousel-item.next:hover {
-      opacity: 0.8;
+      opacity: 0.85;
       filter: brightness(0.8);
-      transform: translateX(53%) scale(0.82) rotateY(-22deg) translateZ(-150px);
+      transform: translateX(48%) scale(0.87) rotateY(-12deg) translateZ(-200px);
     }
 
     body.light-mode .carousel-item.next:hover {
@@ -1001,7 +996,7 @@
         const imgSrc = isLight && item.srcLight ? item.srcLight : item.src;
 
         card.innerHTML = `
-                    <div class="w-full h-full relative bg-slate-900 border border-slate-700/50 rounded-xl overflow-hidden shadow-2xl">
+                    <div class="w-full h-full relative overflow-hidden rounded-xl">
                         <img src="${imgSrc}" alt="${item.title}" class="w-full h-full object-cover">
                     </div>
                 `;
