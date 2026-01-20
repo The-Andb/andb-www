@@ -73,7 +73,7 @@ onMounted(() => {
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-5 w-full max-w-lg mx-auto mb-16">
-            <a href="#" class="group flex-1 flex items-center justify-center px-8 py-4 bg-white text-slate-900 rounded-2xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-indigo-500/20 border border-white/20">
+            <a href="https://github.com/The-Andb/andb/releases/download/v2.2.2/The-Andb-2.2.2-arm64.dmg" class="group flex-1 flex items-center justify-center px-8 py-4 bg-white text-slate-900 rounded-2xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-indigo-500/20 border border-white/20">
                 <Apple class="w-6 h-6 mr-3 fill-current" />
                 <div class="text-left">
                     <div class="text-xs font-medium text-slate-500 uppercase tracking-wider">{{ t('hero.download_mac') }}</div>
@@ -81,7 +81,7 @@ onMounted(() => {
                 </div>
             </a>
             
-            <a href="#" class="group flex-1 flex items-center justify-center px-8 py-4 glass-card text-white rounded-2xl font-bold text-lg hover:scale-105 transition-all">
+            <a href="https://github.com/The-Andb/andb/releases/download/v2.2.2/The-Andb-2.2.2-mac.zip" class="group flex-1 flex items-center justify-center px-8 py-4 glass-card text-white rounded-2xl font-bold text-lg hover:scale-105 transition-all">
                 <Package class="w-6 h-6 mr-3 text-indigo-400" />
                 <div class="text-left">
                      <div class="text-xs font-medium text-slate-400 uppercase tracking-wider">{{ t('hero.download_portable') }}</div>
