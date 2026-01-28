@@ -6,7 +6,7 @@
     "roadmap": "Lộ trình"
   },
   "hero": {
-    "version": "Hệ sinh thái v2.3.0 (Core 3.0.0) đã ra mắt",
+    "version": "Hệ sinh thái v2.3.0 (Core 3.0.3) đã ra mắt",
     "opensource": "100% Miễn phí & Mã nguồn mở",
     "title_line1": "Database Migrations,",
     "title_line2": "Tái định nghĩa.",
@@ -81,6 +81,16 @@
     "subtitle": "Trải nghiệm cách trực quan nhất để so sánh và đồng bộ database schemas.",
     "placeholder_note": "Video đang được cập nhật..."
   },
+  "dumps": {
+    "title": "So sánh SQL Dump",
+    "subtitle": "Không có database online? Không vấn đề. So sánh trực tiếp các file SQL dump để xem thay đổi cấu trúc mà không cần bật server.",
+    "feat1": "Nhanh & Offline",
+    "feat1_desc": "Phân tích file .sql trong vài giây, không cần kết nối mạng.",
+    "feat2": "So sánh Trực quan",
+    "feat2_desc": "Xem DDL chuẩn SQL cạnh nhau với đầy đủ highlight cú pháp.",
+    "feat3": "Sẵn sàng Demo",
+    "feat3_desc": "Thử ngay các file dump demo có sẵn để thấy hiệu quả tức thì."
+  },
   "story": {
     "creator_badge": "Creator",
     "role": "Lập trình viên Backend",
@@ -94,7 +104,8 @@
     "p2_quote": "\"Liệu chúng ta có thể mang kỷ luật của Git vào tầng cơ sở dữ liệu?\"",
     "p3_start": "@the-andb/core hiện đang chuyển mình thành",
     "p3_end": "hệ điều phối database (orchestration engine) tiêu chuẩn công nghiệp. Nó mang lại niềm tin tuyệt đối và sự minh bạch cho việc quản lý DDL.",
-    "milestone_note": "Cột mốc 2025 — Từ CLI lên Giao diện trực quan"
+    "milestone_note_2024": "Cột mốc 2024 — Hoàn thiện Core CLI công nghiệp",
+    "milestone_note_2025": "Cột mốc 2025 — Từ CLI lên Giao diện trực quan"
   },
   "journey": {
     "title": "Hành Trình",

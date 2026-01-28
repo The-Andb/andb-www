@@ -6,7 +6,7 @@
     "roadmap": "Roadmap"
   },
   "hero": {
-    "version": "v2.3.0 Ecosystem is live (Core 3.0.0)",
+    "version": "v2.3.0 Ecosystem is live (Core 3.0.3)",
     "opensource": "100% Free & Open Source",
     "title_line1": "Database Migrations,",
     "title_line2": "Reimagined.",
@@ -81,6 +81,16 @@
     "subtitle": "Experience the most intuitive way to visualize, compare, and sync your database schemas.",
     "placeholder_note": "User is currently recording... placeholder ready."
   },
+  "dumps": {
+    "title": "Compare SQL Dumps",
+    "subtitle": "No live database? No problem. Compare exported SQL dump files directly to see structure changes without spinning up a server.",
+    "feat1": "Fast & Offline",
+    "feat1_desc": "Analyze .sql files in seconds, no connection required.",
+    "feat2": "Visual Diffing",
+    "feat2_desc": "See standard SQL DDL side-by-side with full syntax highlighting.",
+    "feat3": "Live Demo Ready",
+    "feat3_desc": "Try our pre-loaded demo dumps to see how it works instantly."
+  },
   "story": {
     "creator_badge": "Creator",
     "role": "Back-end Developer",
@@ -94,7 +104,8 @@
     "p2_quote": "\"Can we bring the rigor of Git to the database layer?\"",
     "p3_start": "@the-andb/core is now maturing into",
     "p3_end": "the industry-standard orchestration engine. It restores absolute trust and visibility to your DDL management.",
-    "milestone_note": "2025 Milestone — From CLI only to a Solid UI"
+    "milestone_note_2024": "2024 Milestone — Engineering the CLI Powerhouse",
+    "milestone_note_2025": "2025 Milestone — From CLI only to a Solid UI"
   },
   "journey": {
     "title": "The Journey",

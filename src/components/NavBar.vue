@@ -27,7 +27,7 @@ const toggleLocales = () => {
       <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
         <img src="/favicon.png" alt="The Andb Logo" class="w-7 h-7 object-contain">
       </div>
-      <span class="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 dark-heading">
+      <span class="text-2xl font-bold tracking-tight dark-heading">
         The Andb
       </span>
     </div>
@@ -71,12 +71,14 @@ const toggleLocales = () => {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400;
 }
 :global(body.light-mode) .dark-heading {
-  @apply text-slate-900 bg-none;
+  @apply text-slate-900 bg-none !important;
+  color: #0f172a !important;
+  -webkit-text-fill-color: currentcolor !important;
 }
 :global(body.light-mode) .text-slate-300 {
-  @apply text-slate-600;
+  @apply text-slate-700;
 }
 :global(body.light-mode) a:hover {
-  @apply text-black;
+  @apply text-indigo-600;
 }
 </style>

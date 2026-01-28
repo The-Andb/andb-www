@@ -31,7 +31,7 @@ const { t } = useI18n()
             <p class="text-indigo-400 font-medium tracking-wide">{{ t('story.role') }}</p>
 
             <div class="mt-8 pt-8 border-t border-white/5 flex justify-center lg:justify-start gap-4">
-              <a href="https://github.com/The-Andb" class="p-3 bg-white/5 rounded-2xl hover:bg-white/10 transition-all hover:scale-110">
+              <a href="https://github.com/ph4n4n" class="p-3 bg-white/5 rounded-2xl hover:bg-white/10 transition-all hover:scale-110">
                 <Github class="w-5 h-5 text-slate-400" />
               </a>
             </div>
@@ -64,12 +64,25 @@ const { t } = useI18n()
               </p>
             </div>
 
-            <div class="mt-12 p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between">
-              <div class="flex items-center gap-4">
-                <Quote class="w-8 h-8 text-indigo-500/30" />
-                <p class="text-sm font-medium text-slate-500">{{ t('story.milestone_note') }}</p>
+            <div class="mt-12 space-y-4">
+              <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between group/m">
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                    <Quote class="w-5 h-5" />
+                  </div>
+                  <p class="text-sm font-medium text-slate-500 group-hover/m:text-slate-300 transition-colors">{{ t('story.milestone_note_2024') }}</p>
+                </div>
+                <Milestone class="w-6 h-6 text-indigo-500/20" />
               </div>
-              <Milestone class="w-6 h-6 text-indigo-500/20" />
+              <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between group/m">
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400">
+                    <Quote class="w-5 h-5" />
+                  </div>
+                  <p class="text-sm font-medium text-slate-500 group-hover/m:text-slate-300 transition-colors">{{ t('story.milestone_note_2025') }}</p>
+                </div>
+                <Milestone class="w-6 h-6 text-purple-500/20" />
+              </div>
             </div>
           </div>
         </div>
@@ -77,7 +90,7 @@ const { t } = useI18n()
     </section>
 
     <!-- PROJECT MILESTONES SECTION -->
-    <div class="w-full max-w-4xl mx-auto mt-32 px-6 mb-32">
+    <div id="journey" class="w-full max-w-4xl mx-auto mt-32 px-6 mb-32">
         <div class="text-center mb-16">
         <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4 text-white light-text-slate-900">{{ t('journey.title') }}</h2>
         <p class="text-slate-400 light-text-slate-600">{{ t('journey.subtitle') }}</p>

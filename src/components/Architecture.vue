@@ -70,9 +70,15 @@ onMounted(async () => {
           <p class="text-slate-400 light-text-slate-600 leading-relaxed mb-4">
             {{ t('arch.core_desc') }}
           </p>
-          <a href="https://github.com/The-Andb/andb-core" class="inline-flex items-center text-indigo-400 text-sm font-bold hover:underline gap-1">
-            Explore Engine <ExternalLink class="w-3 h-3" />
-          </a>
+          <div class="flex items-center gap-4">
+            <a href="https://github.com/The-Andb/andb-core" class="inline-flex items-center text-indigo-400 text-sm font-bold hover:underline gap-1">
+              Explore Engine <ExternalLink class="w-3 h-3" />
+            </a>
+            <span class="text-slate-700">/</span>
+            <a href="https://www.npmjs.com/package/@the-andb/core" target="_blank" class="inline-flex items-center text-red-400 text-sm font-bold hover:underline gap-1">
+              NPM <ExternalLink class="w-3 h-3" />
+            </a>
+          </div>
         </div>
 
         <!-- CLI -->
@@ -86,9 +92,15 @@ onMounted(async () => {
           <p class="text-slate-400 light-text-slate-600 leading-relaxed mb-4">
              {{ t('arch.cli_desc') }}
           </p>
-          <a href="https://github.com/The-Andb/andb-cli" class="inline-flex items-center text-indigo-400 text-sm font-bold hover:underline gap-1">
-            View CLI <ExternalLink class="w-3 h-3" />
-          </a>
+          <div class="flex items-center gap-4">
+            <a href="https://github.com/The-Andb/andb-cli" class="inline-flex items-center text-indigo-400 text-sm font-bold hover:underline gap-1">
+              View CLI <ExternalLink class="w-3 h-3" />
+            </a>
+            <span class="text-slate-700">/</span>
+            <a href="https://www.npmjs.com/package/@the-andb/cli" target="_blank" class="inline-flex items-center text-red-400 text-sm font-bold hover:underline gap-1">
+              NPM <ExternalLink class="w-3 h-3" />
+            </a>
+          </div>
         </div>
 
         <!-- Desktop -->
