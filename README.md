@@ -1,6 +1,6 @@
 # The Andb Landing Page
 
-Marketing website for [The Andb](https://andb.dev).
+Marketing website for [The Andb](https://theandb.xyz).
 
 ## 📄 License
 

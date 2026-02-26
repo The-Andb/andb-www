@@ -58,7 +58,7 @@
 </template>
 
 <script setup lang="ts">
-import { useMotion } from '@vueuse/motion'
+
 // Animation logic can be added here
 </script>
 

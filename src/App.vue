@@ -8,6 +8,7 @@ import TrustMetrics from './components/TrustMetrics.vue'
 import Comparisons from './components/Comparisons.vue'
 import Privacy from './components/Privacy.vue'
 import Download from './components/Download.vue'
+import Resources from './components/Resources.vue'
 import Footer from './components/Footer.vue'
 </script>
 
@@ -29,6 +30,20 @@ import Footer from './components/Footer.vue'
       <TrustMetrics />
       <Comparisons />
       <Features />
+      
+      <!-- Resources Hub -->
+      <section id="resources" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+            Product <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">Resources</span>
+          </h2>
+          <p class="text-zinc-400 max-w-2xl mx-auto">
+            Deep dives into our architecture, success stories from the field, and a comprehensive guide to mastering your database migrations.
+          </p>
+        </div>
+        <Resources />
+      </section>
+
       <Privacy />
       <Download />
     </main>

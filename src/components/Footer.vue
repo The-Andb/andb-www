@@ -2,10 +2,12 @@
   <footer class="py-12 border-t border-white/5 bg-andb-panel">
     <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
       <div class="col-span-2 md:col-span-1">
-        <h3 class="font-bold text-lg mb-4 text-white">The Andb</h3>
+        <a href="https://theandb.xyz" class="hover:opacity-80 transition-opacity">
+          <h3 class="font-bold text-lg mb-4 text-white">The Andb</h3>
+        </a>
         <p class="text-gray-400 text-sm">
           Intelligent Database Orchestrator. <br />
-          Built by <a href="#" class="text-blue-400 hover:underline">@PhanAn</a>.
+          Built by <a href="https://github.com/ph4n4n" class="text-blue-400 hover:underline">@PhanAn</a>.
         </p>
       </div>
 

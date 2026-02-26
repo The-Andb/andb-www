@@ -2,7 +2,6 @@
 import { ref, onMounted } from 'vue'
 import { 
   Database, 
-  ArrowRight, 
   Download, 
   FileCode, 
   Zap, 
