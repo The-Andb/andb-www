@@ -21,10 +21,10 @@
           <div class="absolute top-0 right-0 p-4 opacity-50"><span class="text-5xl">✅</span></div>
           <h3 class="text-xl font-bold text-blue-300 mb-4">The Andb Way</h3>
           <ul class="space-y-3 text-gray-300 text-sm">
-             <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> One-click detailed comparison</li>
-             <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Auto-generated `ALTER` scripts</li>
-             <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Migration history log built-in</li>
-             <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> **Peace of mind**</li>
+             <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Offline structural comparison</li>
+             <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Auto-generated `ALTER` scripts from drift</li>
+             <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> CI/CD integration hooks</li>
+             <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero telemetry, zero cloud calls</li>
           </ul>
         </div>
       </div>

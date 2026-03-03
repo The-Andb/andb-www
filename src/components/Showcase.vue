@@ -54,11 +54,10 @@ onMounted(() => {
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center mb-16 px-4">
         <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
-          The <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Interactive</span> Showcase
+          See the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Engine</span> in Action
         </h2>
         <p class="text-lg text-gray-400 leading-relaxed">
-          Don't just take our word for it. Explore the engine's precision directly in your browser. 
-          Compare legacy dumps and see the magic of auto-generation.
+          Explore how the local comparison engine parses schemas and generates structural DDL diffs. No data is sent to the cloud.
         </p>
       </div>
 

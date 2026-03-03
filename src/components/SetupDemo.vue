@@ -184,7 +184,7 @@ const copySQL = () => {
           Interactive Demo
         </h1>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Experience how The Andb sets up a restricted database user with absolute security and transparency
+          See how The Andb provisions restricted database credentials locally without exposing root access.
         </p>
       </div>
 
