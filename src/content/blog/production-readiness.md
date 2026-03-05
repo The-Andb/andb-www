@@ -6,7 +6,7 @@ We are excited to announce major stability and automation features in our latest
 
 Building robust CI/CD pipelines requires clean, machine-readable data. In this update, we've refined our CLI to ensure that when you request JSON or YAML formats, the output is "pipe-clean".
 
-- **Log Silencing**: All NestJS and internal initialization logs are now suppressed.
+- **Log Silencing**: All framework and internal initialization logs are now suppressed.
 - **Error Streams**: Destructive change warnings are intelligently routed to `stderr`, keeping your `stdout` parseable.
 
 ## Safety First: Auto-Backup
