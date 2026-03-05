@@ -217,7 +217,7 @@ onMounted(() => {
               <span class="text-[10px] font-bold text-gray-600 uppercase tracking-[0.2em]">Engine Status:</span>
               <div class="flex items-center space-x-1.5 px-2 py-1 bg-green-500/5 rounded-full ring-1 ring-green-500/20">
                  <div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
-                 <span class="text-[10px] font-mono text-green-500 leading-none">v3.0.0-NEST</span>
+                 <span class="text-[10px] font-mono text-green-500 leading-none">v4.0.0-CORE</span>
               </div>
            </div>
            <div class="flex items-center space-x-4">

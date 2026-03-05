@@ -15,15 +15,21 @@
           <a href="#features" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Features</a>
           <a href="#pricing" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Pricing</a>
           <a href="#resources" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Resources</a>
-          <a href="https://github.com/The-Andb/andb" class="text-gray-300 hover:text-white transition-colors text-sm font-medium flex items-center">
+          <a href="https://github.com/The-Andb/andb-desktop" class="text-gray-300 hover:text-white transition-colors text-sm font-medium flex items-center">
             GitHub
             <span class="ml-1 opacity-50">↗</span>
           </a>
         </div>
 
-        <!-- CTA -->
-        <div class="hidden md:flex items-center">
-          <a href="#download" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-lg shadow-blue-500/20">
+        <!-- CTA & Lang -->
+        <div class="hidden md:flex items-center space-x-4">
+          <button 
+            @click="toggleLang" 
+            class="p-2 text-gray-400 hover:text-white transition-colors text-xs font-mono border border-white/10 rounded-lg bg-white/5 hover:bg-white/10"
+          >
+            {{ locale === 'en' ? 'EN' : 'VI' }}
+          </button>
+          <a href="https://github.com/The-Andb/andb-desktop/releases" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-lg shadow-blue-500/20">
             Download Beta
           </a>
         </div>
@@ -33,5 +39,12 @@
 </template>
 
 <script setup lang="ts">
-// Simple static navbar for now
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
+
+const toggleLang = () => {
+  locale.value = locale.value === 'en' ? 'vi' : 'en'
+  localStorage.setItem('user-locale', locale.value)
+}
 </script>
