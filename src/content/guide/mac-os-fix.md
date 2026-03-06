@@ -17,6 +17,14 @@ xattr -cr /Applications/The\ Andb.app
 
 Now you should be able to open the app normally from your Applications folder.
 
+### 💡 A better way: Homebrew
+
+If you want to avoid these steps, we recommend installing via **Homebrew**. It handles the security attributes automatically:
+
+```bash
+brew tap The-Andb/tap && brew install --cask the-andb
+```
+
 ---
 
 > [!NOTE]

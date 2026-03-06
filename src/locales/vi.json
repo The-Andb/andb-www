@@ -29,7 +29,7 @@
     },
     "phase2": {
       "title": "Nền tảng vững chắc",
-      "desc": "Làm chủ MySQL. Tối ưu Core engine.",
+      "desc": "Làm chủ MySQL. Tích hợp SSH & Safe Mode.",
       "date": "Th1 - Th2 2026"
     },
     "phase3": {
@@ -38,8 +38,8 @@
       "date": "Th2 - Th3 2026"
     },
     "phase4": {
-      "title": "Tính năng Pro",
-      "desc": "Bảo mật SSH, Safe Mode & Team Tools.",
+      "title": "Doanh nghiệp",
+      "desc": "Công cụ nhóm, Đồng bộ Cloud & Audit Logs.",
       "date": "Th3 2026+"
     },
     "focus_title": "Việc đang làm",
@@ -56,7 +56,7 @@
       "comm_desc": "Core tool miễn phí. Hỗ trợ MySQL & Postgres. Dành cho mọi người.",
       "pro_title": "Bản Pro",
       "pro_badge": "Thu phí",
-      "pro_desc": "Tính năng nâng cao: SSH, Safe Mode, và công cụ nhóm."
+      "pro_desc": "Tính năng nâng cao: Cộng tác nhóm, Đồng bộ Cloud, và Audit logs."
     },
     "verified": "Xác nhận bởi Engineering Team: Th1 2026"
   },
@@ -74,6 +74,8 @@
     "mac_fix_desc": "Thấy lỗi \"damaged\"? Chuyện bình thường trên Mac với app mới. Code tụi mình Open Source, yên tâm nhé.",
     "mac_fix_step": "Để sửa, mở app này và chạy lệnh:",
     "mac_fix_note": "Lệnh này giúp app mở được bình thường.",
+    "brew_title": "Khuyên dùng",
+    "brew_desc": "Cài đặt qua",
     "full_guide_btn": "Xem hướng dẫn đầy đủ"
   },
   "demo": {

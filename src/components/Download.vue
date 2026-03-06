@@ -22,7 +22,8 @@
       </div>
 
       <div class="mt-8 text-sm text-gray-500">
-        Also available via <code class="bg-white/5 px-2 py-1 rounded text-blue-300">brew install --cask the-andb</code>
+        <span class="bg-blue-500/20 text-blue-300 text-[10px] font-bold px-1.5 py-0.5 rounded mr-2 uppercase tracking-wider">{{ $t('guide.brew_title') }}</span>
+        {{ $t('guide.brew_desc') }} <code class="bg-white/5 px-2 py-1 rounded text-blue-300">brew tap The-Andb/tap && brew install --cask the-andb</code>
       </div>
 
       <!-- macOS Fix Section -->

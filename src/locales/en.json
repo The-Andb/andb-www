@@ -29,7 +29,7 @@
     },
     "phase2": {
       "title": "Better Foundation",
-      "desc": "Mastering MySQL. Making core faster.",
+      "desc": "Mastering MySQL. Core SSH & Safe Mode.",
       "date": "Jan - Feb 2026"
     },
     "phase3": {
@@ -38,8 +38,8 @@
       "date": "Feb - Mar 2026"
     },
     "phase4": {
-      "title": "Pro Features",
-      "desc": "SSH, Safe Mode & Team Tools.",
+      "title": "Enterprise",
+      "desc": "Team Tools, Cloud Sync & Audit Logs.",
       "date": "Mar 2026+"
     },
     "focus_title": "What we are doing",
@@ -56,7 +56,7 @@
       "comm_desc": "Core tool is free. Supports MySQL & Postgres. For everyone.",
       "pro_title": "Pro Version",
       "pro_badge": "Paid",
-      "pro_desc": "Advanced features: SSH, Safe Mode, and Team tools."
+      "pro_desc": "Advanced features: Team collaboration, Cloud sync, and Audit logs."
     },
     "verified": "Verified by Engineering Team: Jan 2026"
   },
@@ -74,6 +74,8 @@
     "mac_fix_desc": "Seeing a \"damaged\" error? This is normal for new apps not on the App Store. Our code is Open Source and safe.",
     "mac_fix_step": "To fix it, run this in",
     "mac_fix_note": "This allows the app to open.",
+    "brew_title": "Recommended",
+    "brew_desc": "Install via",
     "full_guide_btn": "View full guide"
   },
   "demo": {
