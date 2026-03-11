@@ -6,9 +6,11 @@ All notable changes to the andb-www project will be documented in this file.
 
 ### Added
 - **Playground Links**: Added direct links to interactive playground environments in the blog and features section.
-- **Product Updates**: Synchronized feature list with 4.0.0-beta.2 release, including Search Content and Go to Definition functionality.
-- **Visual Improvements**: Updated UI components to reflect the latest design system changes.
+- **Product Updates**: Official stable release synchronized with Core/CLI v4.0.0 and Desktop v3.1.0.
+- **Branding**: Fully rebranded to **The Andb** across the site.
+- **Stable Badge**: Added "v3.1.0 Stable is Live" status badge to the Hero section.
 
 ### Changed
 - Improved mobile responsiveness for the documentation and blog sections.
 - Updated dependency versions for better performance and security.
+- Refined messaging to reflect the product's evolution as the "Simplest Database Migration Tool".
