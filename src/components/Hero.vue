@@ -12,7 +12,7 @@
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
         </span>
-        v3.1.0-beta.1 Public Beta is Live
+        v3.1.0-beta.2 Public Beta is Live
       </a>
 
       <!-- i18n Version Line -->
@@ -28,7 +28,7 @@
 
       <!-- Subheadline -->
       <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up delay-200">
-        Not a replacement for your heavy IDE. Just a sharp tool to export DDL, compare schemas offline, and generate migration scripts safely.
+        Simplest Database Migration Tool. Just a sharp tool to export DDL, compare schemas offline, and generate migration scripts safely.
       </p>
 
       <!-- CTA Group -->
