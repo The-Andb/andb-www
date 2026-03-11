@@ -12,7 +12,7 @@
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
         </span>
-        v3.1.0-beta.2 Public Beta is Live
+        v3.1.0 Stable is Live
       </a>
 
       <!-- i18n Version Line -->
