@@ -15,7 +15,7 @@
           <a href="#features" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Features</a>
           <a href="#pricing" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Pricing</a>
           <a href="#resources" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Resources</a>
-          <a href="https://github.com/The-Andb/andb-desktop" class="text-gray-300 hover:text-white transition-colors text-sm font-medium flex items-center">
+          <a href="https://github.com/The-Andb" class="text-gray-300 hover:text-white transition-colors text-sm font-medium flex items-center">
             GitHub
             <span class="ml-1 opacity-50">↗</span>
           </a>
