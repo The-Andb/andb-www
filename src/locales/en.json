@@ -7,10 +7,10 @@
   },
   "hero": {
     "version": "v3.1.0 Ecosystem is live (Core 4.0.0-beta.1)",
-    "opensource": "100% Free & Open Source",
-    "title_line1": "Database Migrations,",
-    "title_line2": "Reimagined.",
-    "subtitle": "The intelligent bridge between your database schemas. Visualize, compare, and sync without friction.",
+    "opensource": "Free to Use • Privacy Focused • 100% Open Source (MIT)",
+    "title_line1": "Stop Tracing Schema.",
+    "title_line2": "Master the DDL.",
+    "subtitle": "The precision orchestration tool for database engineers. 100% Free and Open Source. Built for DDL safety and zero-data-loss trust.",
     "download_mac": "MacOS Installer",
     "download_portable": "Portable",
     "setup_guide": "First time using The Andb?",
@@ -51,12 +51,12 @@
     },
     "strategy": {
       "title": "Our Plan",
-      "comm_title": "Free Version",
-      "comm_badge": "Free / MIT",
-      "comm_desc": "Core tool is free. Supports MySQL & Postgres. For everyone.",
-      "pro_title": "Pro Version",
-      "pro_badge": "Paid",
-      "pro_desc": "Advanced features: Team collaboration, Cloud sync, and Audit logs."
+      "comm_title": "Core Engine & CLI",
+      "comm_badge": "Open / GPLv3",
+      "comm_desc": "The heart of the ecosystem is free and open source. For everyone.",
+      "pro_title": "Premium Desktop App",
+      "pro_badge": "Proprietary",
+      "pro_desc": "Advanced visualization, human-centric sync, and local DDL history."
     },
     "verified": "Verified by Engineering Team: Jan 2026"
   },
@@ -70,11 +70,11 @@
   "guide": {
     "setup_link": "First time using The Andb?",
     "view_guide": "View Setup Guide",
-    "mac_fix_title": "MacOS \"App is damaged\" fix",
-    "mac_fix_desc": "Seeing a \"damaged\" error? This is normal for new apps not on the App Store. Our code is Open Source and safe.",
-    "mac_fix_step": "To fix it, run this in",
-    "mac_fix_note": "This allows the app to open.",
-    "brew_title": "Recommended",
+    "mac_fix_title": "Fix \"App is damaged\" (MacOS)",
+    "mac_fix_desc": "If you see this error, don't worry. It's because the app is unsigned. Our code is fully Open Source and auditable on GitHub.",
+    "mac_fix_step": "Run this in your Terminal:",
+    "mac_fix_note": "This will whitelist the app on your system.",
+    "brew_title": "Standard Path",
     "brew_desc": "Install via",
     "full_guide_btn": "View full guide"
   },
@@ -122,5 +122,30 @@
     "m3_title": "The Inspiration",
     "m3_desc": "After one too many data-loss incidents caused by schema mismatches, the question was born: 'If code has Git, why doesn't the database?'",
     "m3_quote": "Deep before Wide. Precision is the focus."
+  },
+  "features": {
+    "section_title": "Core <span class=\"text-blue-400\">Value</span> Proposition",
+    "section_subtitle": "Built for teams that demand absolute certainty when touching production databases.",
+    "tab_compare_title": "Compare & Diff",
+    "tab_compare_desc": "Semantic schema comparison across environments. Detect drift before it breaks production.",
+    "tab_explore_title": "Explore & Search",
+    "tab_explore_desc": "Go to definition, search content, and visualize your schema structure with high-performance Miller columns.",
+    "tab_monitor_title": "Monitor & Audit",
+    "tab_monitor_desc": "Track DDL history and catch structural changes in real-time. (Note: The Andb only stores history DDL, not responsible for data loss).",
+    "tab_settings_title": "Secure Settings",
+    "tab_settings_desc": "Enterprise-grade connection management with localized storage and zero-cloud dependency.",
+    "feature_export_title": "Export DDL to Local",
+    "feature_export_desc": "Extract tables, procedures, functions, and triggers directly to structured flat files for version control and safe keeping.",
+    "feature_offline_title": "Offline Schema Diff",
+    "feature_offline_desc": "Compare environments entirely locally. Your schemas are never sent to a cloud service. Precision parsing catches structural drift hidden from simple text diffs.",
+    "feature_migration_title": "Auto-Generate Migrations",
+    "feature_migration_desc": "Instantly get accurate ALTER scripts derived directly from structural differences between your Dev, Stage, and Prod environments.",
+    "feature_pipeline_title": "Integrate with CI/CD",
+    "feature_pipeline_desc": "Hooks directly into your CI/CD pipelines via CLI to catch drift before deployment and give AI agents safe access via the MCP server."
+  },
+  "privacy": {
+    "title": "Your Data <span class=\"text-blue-400\">Never</span> Leaves Your Mac",
+    "description": "The Andb connects directly from your machine to your database via native drivers. We strictly commit: TheAndb does NOT export your data. There is no intermediary cloud server, no tracking pixels, and no SaaS subscription required for core features.",
+    "backup_disclaimer": "Safety First: The Andb stores your DDL History (schema structures) to help you track changes. We only store DDL history and are NOT responsible for data loss. Always maintain separate database backups."
   }
 }

@@ -7,10 +7,10 @@
   },
   "hero": {
     "version": "Hệ sinh thái v3.1.0 (Core 4.0.0-beta.1) đã ra mắt",
-    "opensource": "100% Miễn phí & Mã nguồn mở",
-    "title_line1": "Database Migrations,",
-    "title_line2": "Tái định nghĩa.",
-    "subtitle": "Cầu nối thông minh giữa các database schema. Trực quan hóa, so sánh và đồng bộ không chút rào cản.",
+    "opensource": "Miễn phí sử dụng • Bảo mật • 100% Nguồn mở (MIT)",
+    "title_line1": "Ngừng theo dõi Schema.",
+    "title_line2": "Làm chủ DDL.",
+    "subtitle": "Công cụ điều phối chính xác dành cho các kỹ sư database. 100% Miễn phí và Nguồn mở. Đặt an toàn DDL và niềm tin tuyệt đối lên hàng đầu.",
     "download_mac": "Tải cho MacOS",
     "download_portable": "Bản Portable",
     "setup_guide": "Lần đầu sử dụng The Andb?",
@@ -51,12 +51,12 @@
     },
     "strategy": {
       "title": "Kế hoạch của chúng tôi",
-      "comm_title": "Bản Miễn phí",
-      "comm_badge": "Free / MIT",
-      "comm_desc": "Core tool miễn phí. Hỗ trợ MySQL & Postgres. Dành cho mọi người.",
-      "pro_title": "Bản Pro",
-      "pro_badge": "Thu phí",
-      "pro_desc": "Tính năng nâng cao: Cộng tác nhóm, Đồng bộ Cloud, và Audit logs."
+      "comm_title": "Bộ lõi Core & CLI",
+      "comm_badge": "Mở / GPLv3",
+      "comm_desc": "Trái tim của hệ sinh thái hoàn toàn miễn phí và nguồn mở. Dành cho mọi người.",
+      "pro_title": "Ứng dụng Desktop Cao cấp",
+      "pro_badge": "Bản quyền riêng",
+      "pro_desc": "Trực quan hóa nâng cao, đồng bộ tập trung vào người dùng và lịch sử DDL cục bộ."
     },
     "verified": "Xác nhận bởi Engineering Team: Th1 2026"
   },
@@ -70,11 +70,11 @@
   "guide": {
     "setup_link": "Lần đầu dùng The Andb?",
     "view_guide": "Xem hướng dẫn",
-    "mac_fix_title": "Sửa lỗi \"App is damaged\" trên MacOS",
-    "mac_fix_desc": "Thấy lỗi \"damaged\"? Chuyện bình thường trên Mac với app mới. Code tụi mình Open Source, yên tâm nhé.",
-    "mac_fix_step": "Để sửa, mở app này và chạy lệnh:",
-    "mac_fix_note": "Lệnh này giúp app mở được bình thường.",
-    "brew_title": "Khuyên dùng",
+    "mac_fix_title": "Sửa lỗi \"App is damaged\" (MacOS)",
+    "mac_fix_desc": "Nếu bạn thấy lỗi này, đừng lo lắng. Đó là do ứng dụng chưa được ký số. Mã nguồn của chúng tôi hoàn toàn mở và có thể kiểm chứng trên GitHub.",
+    "mac_fix_step": "Chạy lệnh sau trong Terminal:",
+    "mac_fix_note": "Lệnh này sẽ đưa ứng dụng vào danh sách an toàn trên hệ thống của bạn.",
+    "brew_title": "Cách cài chuẩn",
     "brew_desc": "Cài đặt qua",
     "full_guide_btn": "Xem hướng dẫn đầy đủ"
   },
@@ -89,7 +89,7 @@
     "feat1": "Nhanh & Offline",
     "feat1_desc": "Phân tích file .sql trong vài giây, không cần kết nối mạng.",
     "feat2": "So sánh Trực quan",
-    "feat2_desc": "Xem DDL chuẩn SQL cạnh nhau với đầy đủ highlight cú pháp.",
+    "feat2_desc": "Xem DDL chuẩn SQL cạnh nhau with đầy đủ highlight cú pháp.",
     "feat3": "Sẵn sàng Demo",
     "feat3_desc": "Thử ngay các file dump demo có sẵn để thấy hiệu quả tức thì."
   },
@@ -122,5 +122,30 @@
     "m3_title": "Nguồn cảm hứng",
     "m3_desc": "Sau quá nhiều lần mất dữ liệu do lệch schema, câu hỏi đã được đặt ra: 'Nếu code có Git, sao Database lại không?'",
     "m3_quote": "Sâu trước khi Rộng. Sự chính xác là trọng tâm."
+  },
+  "features": {
+    "section_title": "Giá trị <span class=\"text-blue-400\">Cốt lõi</span>",
+    "section_subtitle": "Được xây dựng cho các đội ngũ yêu cầu sự chắc chắn tuyệt đối khi tác động vào database production.",
+    "tab_compare_title": "So sánh & Diff",
+    "tab_compare_desc": "So sánh schema thông minh giữa các môi trường. Phát hiện sai lệch trước khi nó làm hỏng production.",
+    "tab_explore_title": "Khám phá & Tìm kiếm",
+    "tab_explore_desc": "Truy cập định nghĩa (Go to definition), tìm kiếm nội dung và trực quan hóa cấu trúc schema với cột Miller hiệu năng cao.",
+    "tab_monitor_title": "Giám sát & Kiểm tra",
+    "tab_monitor_desc": "Theo dõi lịch sử DDL và bắt các thay đổi cấu trúc theo thời gian thực. (Lưu ý: The Andb chỉ lưu trữ lịch sử DDL, không chịu trách nhiệm về việc mất dữ liệu).",
+    "tab_settings_title": "Cài đặt Bảo mật",
+    "tab_settings_desc": "Quản lý kết nối chuẩn doanh nghiệp với lưu trữ cục bộ và không phụ thuộc vào cloud.",
+    "feature_export_title": "Xuất DDL ra File Cục bộ",
+    "feature_export_desc": "Trích xuất bảng, procedure, function và trigger trực tiếp ra các file phẳng có cấu trúc để quản lý phiên bản và lưu trữ an toàn.",
+    "feature_offline_title": "Diff Schema Ngoại tuyến",
+    "feature_offline_desc": "So sánh các môi trường hoàn toàn cục bộ. Schema của bạn không bao giờ bị gửi lên dịch vụ đám mây. Trình phân tách chính xác giúp bắt các sai lệch cấu trúc mà diff văn bản thông thường bỏ sót.",
+    "feature_migration_title": "Tự động Tạo Migration",
+    "feature_migration_desc": "Nhận ngay các script ALTER chính xác được tạo trực tiếp từ sự khác biệt cấu trúc giữa môi trường Dev, Stage và Prod của bạn.",
+    "feature_pipeline_title": "Tích hợp CI/CD",
+    "feature_pipeline_desc": "Kết nối trực tiếp vào luồng CI/CD của bạn qua CLI để bắt sai lệch trước khi deploy và cấp quyền truy cập an toàn cho AI qua MCP server."
+  },
+  "privacy": {
+    "title": "Dữ liệu của bạn <span class=\"text-blue-400\">Không bao giờ</span> rời khỏi máy Mac",
+    "description": "The Andb kết nối trực tiếp từ máy của bạn tới cơ sở dữ liệu qua drive bản địa. Chúng tôi cam kết: TheAndb KHÔNG export dữ liệu của bạn. Không có máy chủ đám mây trung gian, không có pixel theo dõi và không yêu cầu đăng ký SaaS cho các tính năng cốt lõi.",
+    "backup_disclaimer": "An toàn là trên hết: The Andb lưu trữ Lịch sử DDL (cấu trúc schema) để giúp bạn theo dõi thay đổi. Chúng tôi chỉ lưu lịch sử DDL và KHÔNG chịu trách nhiệm về việc mất dữ liệu. Hãy luôn duy trì các bản backup database riêng biệt."
   }
 }

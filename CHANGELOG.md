@@ -2,6 +2,13 @@
 
 All notable changes to the andb-www project will be documented in this file.
 
+## [1.1.1] - 2026-03-16
+
+### Added
+- **Core Module Updates**: Bumped `@the-andb/core` to v4.0.1 with fixes for storage, comparator test suites, and introduced the `compare-arbitrary` IPC command.
+- **Desktop Application Release (v3.1.1)**: Redesigned Instant Compare view. Replaced the sidebar tab with an iOS-style Header Toggle Switch and added inline single-click "Set as Source/Target" pill buttons to Schema tree components. Added Prism.js SQL Syntax Highlighting.
+- **Tooling Enhancements**: Upgraded CLI & MCP components to reflect the core parity changes and new IPC boundaries.
+
 ## [1.1.0] - 2026-03-11
 
 ### Added

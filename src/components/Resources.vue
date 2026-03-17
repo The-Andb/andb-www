@@ -3,7 +3,7 @@ import { ref, computed, onMounted, defineAsyncComponent } from 'vue'
 import { BookOpen, Newspaper, Trophy, Lightbulb, ArrowLeft } from 'lucide-vue-next'
 
 const categories = [
-  { id: 'blog', name: 'Blog', icon: Newspaper },
+  { id: 'blog', name: "What's New", icon: Newspaper },
   { id: 'guide', name: 'Guides', icon: BookOpen },
   { id: 'case-studies', name: 'Case Studies', icon: Lightbulb },
   { id: 'achievements', name: 'Achievements', icon: Trophy },
@@ -116,7 +116,7 @@ defineExpose({
           >
             <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <h3 class="text-base font-medium mb-2 group-hover:text-cyan-400 transition-colors">{{ doc.title }}</h3>
-            <p class="text-sm text-zinc-500 line-clamp-2">Learn more about {{ doc.title.toLowerCase() }} in the {{ activeCategory }} section.</p>
+            <p class="text-sm text-zinc-500 line-clamp-2">Check out the latest features and visual demos in {{ doc.title.toLowerCase() }}.</p>
           </div>
           
           <div v-if="filteredDocs.length === 0" class="col-span-full py-20 text-center">

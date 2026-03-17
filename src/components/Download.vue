@@ -11,14 +11,14 @@
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button class="px-8 py-4 bg-white hover:bg-gray-100 text-black rounded-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-xl shadow-white/5">
+        <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.2.3" target="_blank" class="block w-full sm:w-auto px-8 py-4 bg-white hover:bg-gray-100 text-black rounded-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-xl shadow-white/5 cursor-pointer">
           Download beta for macOS
           <span class="block text-xs font-normal text-gray-500 mt-1">Apple Silicon (M1/M2/M3)</span>
-        </button>
-        <button class="px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white rounded-xl font-bold transition-all border border-gray-700">
+        </a>
+        <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.2.3" target="_blank" class="block w-full sm:w-auto px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white rounded-xl font-bold transition-all border border-gray-700 cursor-pointer">
            Download for Intel
           <span class="block text-xs font-normal text-gray-500 mt-1">Universal Binary</span>
-        </button>
+        </a>
       </div>
 
       <div class="mt-8 text-sm text-gray-500">
@@ -37,7 +37,7 @@
         </p>
         <div class="flex items-center gap-2 group cursor-pointer" @click="copyFix">
           <div class="flex-1 bg-black/40 rounded-lg p-3 font-mono text-xs text-blue-300 border border-white/5 break-all group-hover:bg-black/60 transition-colors">
-            xattr -cr /Applications/The\ Andb.app
+            xattr -cr /Applications/TheAndb.app
           </div>
         </div>
         <p class="text-xs text-gray-500 mt-3">
@@ -51,7 +51,7 @@
 
 <script setup lang="ts">
 const copyFix = () => {
-  navigator.clipboard.writeText('xattr -cr /Applications/The\\ Andb.app')
+  navigator.clipboard.writeText('xattr -cr /Applications/TheAndb.app')
   // Optional: show toast
 }
 </script>

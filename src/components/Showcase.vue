@@ -31,13 +31,14 @@ const fetchDumps = async () => {
 }
 
 const runCompare = () => {
+  if (isComparing.value) return
   isComparing.value = true
   comparisonDone.value = false
+  activeTab.value = 'diff'
   setTimeout(() => {
     isComparing.value = false
     comparisonDone.value = true
-    activeTab.value = 'diff'
-  }, 1500)
+  }, 2000)
 }
 
 onMounted(() => {
@@ -141,9 +142,12 @@ onMounted(() => {
              <!-- Diff Simulation -->
              <div v-if="activeTab === 'diff'" class="h-full flex flex-col p-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
                 <div v-if="!comparisonDone && !isComparing" class="flex-1 flex flex-col items-center justify-center text-center p-12 opacity-50">
-                    <Zap class="w-16 h-16 text-gray-700 mb-6" />
-                    <h3 class="text-xl font-bold text-gray-400 mb-2">Ready to Compare</h3>
-                    <p class="text-sm text-gray-500">Click the "Run Simulation" button to see the engine in action.</p>
+                    <div class="relative mb-6">
+                        <Zap class="w-20 h-20 text-blue-500/20" />
+                        <Zap class="absolute inset-0 w-20 h-20 text-blue-500 blur-xl opacity-20" />
+                    </div>
+                    <h3 class="text-xl font-black text-white mb-2 uppercase tracking-widest">Engine Standby</h3>
+                    <p class="text-sm text-gray-500 max-w-xs">Click the <b class="text-blue-400">Run Simulation</b> button to analyze schema diffs in real-time.</p>
                 </div>
 
                 <div v-if="isComparing" class="flex-1 flex flex-col items-center justify-center space-y-4">
