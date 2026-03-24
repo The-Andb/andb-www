@@ -17,4 +17,9 @@ export default defineConfig({
       },
     }) as any,
   ],
+  server: {
+    fs: {
+      allow: ['..'] // Allow serving files from workspace root (for ../../releases)
+    }
+  }
 })

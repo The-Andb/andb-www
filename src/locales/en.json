@@ -13,7 +13,7 @@
     "subtitle": "The precision orchestration tool for database engineers. 100% Free and Open Source. Built for DDL safety and zero-data-loss trust.",
     "download_mac": "MacOS Installer",
     "download_portable": "Portable",
-    "setup_guide": "First time using The Andb?",
+    "setup_guide": "First time using TheAndb?",
     "view_guide": "View Setup Guide",
     "os_req": "Requires macOS 11.0+ • Apple Silicon",
     "win_coming": "Windows version coming soon"
@@ -21,7 +21,7 @@
   "roadmap": {
     "vision_badge": "Vision 2026",
     "title": "Future Plan",
-    "subtitle": "Making The Andb a professional tool for everyone.",
+    "subtitle": "Making TheAndb a professional tool for everyone.",
     "status_live": "Ready",
     "phase1": {
       "title": "Foundation",
@@ -68,7 +68,7 @@
     "gui_desc": "The Intuition. A premium desktop interface for visual exploration and human-centric schema synchronization."
   },
   "guide": {
-    "setup_link": "First time using The Andb?",
+    "setup_link": "First time using TheAndb?",
     "view_guide": "View Setup Guide",
     "mac_fix_title": "Fix \"App is damaged\" (MacOS)",
     "mac_fix_desc": "If you see this error, don't worry. It's because the app is unsigned. Our code is fully Open Source and auditable on GitHub.",
@@ -102,7 +102,7 @@
     "p1_start": "After years in the trenches, I realized there was a missing link:",
     "p1_highlight": "the database is always a step behind.",
     "p1_end": "Manually tracing schema changes is prone to human error and production catastrophes. As systems scale, the risks grow exponentially.",
-    "p2_start": "The Andb was born from a radical philosophy: 'Deep before Wide'. Before we expand to every database, we must master one. I asked myself:",
+    "p2_start": "TheAndb was born from a radical philosophy: 'Deep before Wide'. Before we expand to every database, we must master one. I asked myself:",
     "p2_quote": "\"Can we bring the rigor of Git to the database layer?\"",
     "p3_start": "@the-andb/core is now maturing into",
     "p3_end": "the industry-standard orchestration engine. It restores absolute trust and visibility to your DDL management.",
@@ -131,7 +131,7 @@
     "tab_explore_title": "Explore & Search",
     "tab_explore_desc": "Go to definition, search content, and visualize your schema structure with high-performance Miller columns.",
     "tab_monitor_title": "Monitor & Audit",
-    "tab_monitor_desc": "Track DDL history and catch structural changes in real-time. (Note: The Andb only stores history DDL, not responsible for data loss).",
+    "tab_monitor_desc": "Track DDL history and catch structural changes in real-time. (Note: TheAndb only stores history DDL, not responsible for data loss).",
     "tab_settings_title": "Secure Settings",
     "tab_settings_desc": "Enterprise-grade connection management with localized storage and zero-cloud dependency.",
     "feature_export_title": "Export DDL to Local",
@@ -145,7 +145,7 @@
   },
   "privacy": {
     "title": "Your Data <span class=\"text-blue-400\">Never</span> Leaves Your Mac",
-    "description": "The Andb connects directly from your machine to your database via native drivers. We strictly commit: TheAndb does NOT export your data. There is no intermediary cloud server, no tracking pixels, and no SaaS subscription required for core features.",
-    "backup_disclaimer": "Safety First: The Andb stores your DDL History (schema structures) to help you track changes. We only store DDL history and are NOT responsible for data loss. Always maintain separate database backups."
+    "description": "TheAndb connects directly from your machine to your database via native drivers. We strictly commit: TheAndb does NOT export your data. There is no intermediary cloud server, no tracking pixels, and no SaaS subscription required for core features.",
+    "backup_disclaimer": "Safety First: TheAndb stores your DDL History (schema structures) to help you track changes. We only store DDL history and are NOT responsible for data loss. Always maintain separate database backups."
   }
 }

@@ -13,7 +13,7 @@
     "subtitle": "Công cụ điều phối chính xác dành cho các kỹ sư database. 100% Miễn phí và Nguồn mở. Đặt an toàn DDL và niềm tin tuyệt đối lên hàng đầu.",
     "download_mac": "Tải cho MacOS",
     "download_portable": "Bản Portable",
-    "setup_guide": "Lần đầu sử dụng The Andb?",
+    "setup_guide": "Lần đầu sử dụng TheAndb?",
     "view_guide": "Xem hướng dẫn cài đặt",
     "os_req": "Yêu cầu macOS 11.0+ • Apple Silicon",
     "win_coming": "Phiên bản Windows sắp ra mắt"
@@ -21,7 +21,7 @@
   "roadmap": {
     "vision_badge": "Tầm nhìn 2026",
     "title": "Kế hoạch tương lai",
-    "subtitle": "Biến The Andb thành công cụ chuyên nghiệp cho mọi người.",
+    "subtitle": "Biến TheAndb thành công cụ chuyên nghiệp cho mọi người.",
     "status_live": "Đã xong",
     "phase1": {
       "title": "Nền tảng",
@@ -68,7 +68,7 @@
     "gui_desc": "Sự Trực Giác. Giao diện desktop cao cấp dành cho việc khám phá và đồng bộ schema tập trung vào trải nghiệm người dùng."
   },
   "guide": {
-    "setup_link": "Lần đầu dùng The Andb?",
+    "setup_link": "Lần đầu dùng TheAndb?",
     "view_guide": "Xem hướng dẫn",
     "mac_fix_title": "Sửa lỗi \"App is damaged\" (MacOS)",
     "mac_fix_desc": "Nếu bạn thấy lỗi này, đừng lo lắng. Đó là do ứng dụng chưa được ký số. Mã nguồn của chúng tôi hoàn toàn mở và có thể kiểm chứng trên GitHub.",
@@ -102,7 +102,7 @@
     "p1_start": "Sau nhiều năm làm việc thực chiến, tôi nhận ra một mắt xích bị thiếu:",
     "p1_highlight": "database luôn đi chậm hơn một bước.",
     "p1_end": "Việc theo dõi thay đổi schema thủ công rất dễ gây sai sót và dẫn đến thảm họa production. Khi hệ thống mở rộng, rủi ro sẽ tăng theo cấp số nhân.",
-    "p2_start": "The Andb ra đời từ một triết lý cốt lõi: 'Sâu trước khi Rộng'. Trước khi mở rộng ra mọi loại database, chúng tôi phải làm chủ được một cái. Tôi tự hỏi:",
+    "p2_start": "TheAndb ra đời từ một triết lý cốt lõi: 'Sâu trước khi Rộng'. Trước khi mở rộng ra mọi loại database, chúng tôi phải làm chủ được một cái. Tôi tự hỏi:",
     "p2_quote": "\"Liệu chúng ta có thể mang kỷ luật của Git vào tầng cơ sở dữ liệu?\"",
     "p3_start": "@the-andb/core hiện đang chuyển mình thành",
     "p3_end": "hệ điều phối database (orchestration engine) tiêu chuẩn công nghiệp. Nó mang lại niềm tin tuyệt đối và sự minh bạch cho việc quản lý DDL.",
@@ -131,7 +131,7 @@
     "tab_explore_title": "Khám phá & Tìm kiếm",
     "tab_explore_desc": "Truy cập định nghĩa (Go to definition), tìm kiếm nội dung và trực quan hóa cấu trúc schema với cột Miller hiệu năng cao.",
     "tab_monitor_title": "Giám sát & Kiểm tra",
-    "tab_monitor_desc": "Theo dõi lịch sử DDL và bắt các thay đổi cấu trúc theo thời gian thực. (Lưu ý: The Andb chỉ lưu trữ lịch sử DDL, không chịu trách nhiệm về việc mất dữ liệu).",
+    "tab_monitor_desc": "Theo dõi lịch sử DDL và bắt các thay đổi cấu trúc theo thời gian thực. (Lưu ý: TheAndb chỉ lưu trữ lịch sử DDL, không chịu trách nhiệm về việc mất dữ liệu).",
     "tab_settings_title": "Cài đặt Bảo mật",
     "tab_settings_desc": "Quản lý kết nối chuẩn doanh nghiệp với lưu trữ cục bộ và không phụ thuộc vào cloud.",
     "feature_export_title": "Xuất DDL ra File Cục bộ",
@@ -145,7 +145,7 @@
   },
   "privacy": {
     "title": "Dữ liệu của bạn <span class=\"text-blue-400\">Không bao giờ</span> rời khỏi máy Mac",
-    "description": "The Andb kết nối trực tiếp từ máy của bạn tới cơ sở dữ liệu qua drive bản địa. Chúng tôi cam kết: TheAndb KHÔNG export dữ liệu của bạn. Không có máy chủ đám mây trung gian, không có pixel theo dõi và không yêu cầu đăng ký SaaS cho các tính năng cốt lõi.",
-    "backup_disclaimer": "An toàn là trên hết: The Andb lưu trữ Lịch sử DDL (cấu trúc schema) để giúp bạn theo dõi thay đổi. Chúng tôi chỉ lưu lịch sử DDL và KHÔNG chịu trách nhiệm về việc mất dữ liệu. Hãy luôn duy trì các bản backup database riêng biệt."
+    "description": "TheAndb kết nối trực tiếp từ máy của bạn tới cơ sở dữ liệu qua drive bản địa. Chúng tôi cam kết: TheAndb KHÔNG export dữ liệu của bạn. Không có máy chủ đám mây trung gian, không có pixel theo dõi và không yêu cầu đăng ký SaaS cho các tính năng cốt lõi.",
+    "backup_disclaimer": "An toàn là trên hết: TheAndb lưu trữ Lịch sử DDL (cấu trúc schema) để giúp bạn theo dõi thay đổi. Chúng tôi chỉ lưu lịch sử DDL và KHÔNG chịu trách nhiệm về việc mất dữ liệu. Hãy luôn duy trì các bản backup database riêng biệt."
   }
 }

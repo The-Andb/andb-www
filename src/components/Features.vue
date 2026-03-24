@@ -120,7 +120,7 @@
       <!-- Feature Map Ecosystem -->
       <div class="mt-20">
         <div class="text-center max-w-2xl mx-auto mb-10">
-          <h3 class="text-2xl font-bold tracking-tight mb-2">The Andb Ecosystem</h3>
+          <h3 class="text-2xl font-bold tracking-tight mb-2">TheAndb Ecosystem</h3>
           <p class="text-gray-400 text-sm">
             A comprehensive overview of the architecture and features.
           </p>
@@ -128,7 +128,7 @@
         <div class="glass-panel p-8 md:p-12 rounded-3xl border-white/5 bg-gradient-to-br from-white/[0.02] to-transparent overflow-x-auto custom-scrollbar flex justify-center">
           <div class="mermaid text-center">
 flowchart LR
-    Root(("The Andb"))
+    Root(("TheAndb"))
 
     %% Categories
     Desktop["Desktop App"]

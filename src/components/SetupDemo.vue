@@ -51,7 +51,7 @@ const levelColor = computed(() => {
 })
 
 const sqlScript = computed(() => {
-  let sql = `-- The Andb Restricted User Setup Script
+  let sql = `-- TheAndb Restricted User Setup Script
 -- Generated: ${new Date().toISOString()}
 -- Safety Level: ${levelName.value}
 
@@ -184,7 +184,7 @@ const copySQL = () => {
           Interactive Demo
         </h1>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          See how The Andb provisions restricted database credentials locally without exposing root access.
+          See how TheAndb provisions restricted database credentials locally without exposing root access.
         </p>
       </div>
 
@@ -273,7 +273,7 @@ const copySQL = () => {
 
             <!-- Permissions -->
             <div>
-              <h3 class="text-lg font-black text-gray-900 dark:text-white mb-4">How can The Andb assist you?</h3>
+              <h3 class="text-lg font-black text-gray-900 dark:text-white mb-4">How can TheAndb assist you?</h3>
               <div class="space-y-3">
                 <div class="p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl border border-gray-200 dark:border-gray-600">
                   <div class="flex items-center justify-between">
@@ -458,7 +458,7 @@ const copySQL = () => {
           <div>
             <p class="text-sm font-bold text-yellow-900 dark:text-yellow-100">Interactive Demo Only</p>
             <p class="text-xs text-yellow-700 dark:text-yellow-300 mt-1">
-              This is a simulated experience. Download The Andb Desktop to use this feature with your actual databases.
+              This is a simulated experience. Download TheAndb Desktop to use this feature with your actual databases.
             </p>
           </div>
         </div>

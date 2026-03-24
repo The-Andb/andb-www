@@ -6,7 +6,7 @@ Managing column renames in MySQL has always been risky. Most tools treat a renam
 
 One of our early adopters needed to rename `user_login` to `username` across 50+ tables without downtime or data migration scripts.
 
-## The andb Approach
+## TheAndb Approach
 
 With our advanced matching engine, we detected the rename by analyzing the column structure parity.
 
