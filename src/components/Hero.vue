@@ -7,9 +7,9 @@
 
     <div class="container mx-auto px-4 text-center z-10">
       <!-- Badge -->
-      <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.2.3" target="_blank" class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-white/5 border border-blue-200 dark:border-white/10 text-xs font-medium text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-white/10 transition mb-4 animate-fade-in-up">
+      <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.2.5" target="_blank" class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-white/5 border border-blue-200 dark:border-white/10 text-xs font-medium text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-white/10 transition mb-4 animate-fade-in-up">
         <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
-        v3.2.3 is out! AIO Engine Bundle
+        v3.2.5 is out! AIO Engine Bundle
       </a>
 
       <!-- i18n Version Line -->
@@ -30,8 +30,8 @@
 
       <!-- CTA Group -->
       <div class="flex flex-col sm:flex-row items-center gap-4 justify-center animate-fade-in-up delay-200">
-        <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.2.3" target="_blank" class="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold shadow-lg shadow-blue-500/25 transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
-          <span>Download Beta <span class="opacity-70 text-sm font-normal">v3.2.3</span></span>
+        <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.2.5" target="_blank" class="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold shadow-lg shadow-blue-500/25 transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
+          <span>Download Beta <span class="opacity-70 text-sm font-normal">v3.2.5</span></span>
         </a>
         <a href="https://github.com/The-Andb/andb-cli" target="_blank" class="px-8 py-3.5 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-white/10 rounded-lg font-medium transition-all hover:text-gray-900 dark:hover:text-white flex items-center gap-2 shadow-sm dark:shadow-none">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>

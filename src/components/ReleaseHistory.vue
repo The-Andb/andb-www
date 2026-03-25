@@ -3,8 +3,8 @@ import { onMounted, nextTick } from 'vue'
 import { Database, GitCommit, Shield } from 'lucide-vue-next'
 import mermaid from 'mermaid'
 
-const mdComponents = import.meta.glob('../../../releases/*.md', { eager: true, import: 'default' })
-const mdRaw = import.meta.glob('../../../releases/*.md', { eager: true, query: '?raw', import: 'default' })
+const mdComponents = import.meta.glob('../../releases/*.md', { eager: true, import: 'default' })
+const mdRaw = import.meta.glob('../../releases/*.md', { eager: true, query: '?raw', import: 'default' })
 
 const parsedReleases = Object.keys(mdComponents)
   .filter(path => /\d+\.\d+\.\d+/.test(path)) // Only parse files containing a semver version
