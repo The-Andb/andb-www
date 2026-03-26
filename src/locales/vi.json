@@ -15,8 +15,9 @@
     "download_portable": "Bản Portable",
     "setup_guide": "Lần đầu sử dụng TheAndb?",
     "view_guide": "Xem hướng dẫn cài đặt",
-    "os_req": "Yêu cầu macOS 11.0+ • Apple Silicon",
-    "win_coming": "Phiên bản Windows sắp ra mắt"
+    "os_req": "Yêu cầu macOS 11.0+",
+    "win_installer": "Tải cho Windows",
+    "linux_installer": "Tải cho Linux (GUI)"
   },
   "roadmap": {
     "vision_badge": "Tầm nhìn 2026",
@@ -76,6 +77,8 @@
     "mac_fix_note": "Lệnh này sẽ đưa ứng dụng vào danh sách an toàn trên hệ thống của bạn.",
     "brew_title": "Cách cài chuẩn",
     "brew_desc": "Cài đặt qua",
+    "win_desc": "Trên Windows, chỉ cần chạy file cài đặt (.exe) và làm theo các bước. Cài đặt tiêu chuẩn.",
+    "linux_desc": "Trên Linux, sử dụng AppImage hoặc trình quản lý gói của bạn. Đảm bảo FUSE đã được cài đặt cho GUI.",
     "full_guide_btn": "Xem hướng dẫn đầy đủ"
   },
   "demo": {

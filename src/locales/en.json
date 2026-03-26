@@ -15,8 +15,9 @@
     "download_portable": "Portable",
     "setup_guide": "First time using TheAndb?",
     "view_guide": "View Setup Guide",
-    "os_req": "Requires macOS 11.0+ • Apple Silicon",
-    "win_coming": "Windows version coming soon"
+    "os_req": "Requires macOS 11.0+",
+    "win_installer": "Download for Windows",
+    "linux_installer": "Download for Linux (GUI)"
   },
   "roadmap": {
     "vision_badge": "Vision 2026",
@@ -76,6 +77,8 @@
     "mac_fix_note": "This will whitelist the app on your system.",
     "brew_title": "Standard Path",
     "brew_desc": "Install via",
+    "win_desc": "On Windows, just run the installer (.exe) and follow the steps. Standard installation applies.",
+    "linux_desc": "On Linux, use the AppImage or your preferred package manager. For GUI, ensure FUSE is installed.",
     "full_guide_btn": "View full guide"
   },
   "demo": {
