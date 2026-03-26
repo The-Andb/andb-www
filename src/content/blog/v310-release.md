@@ -1,6 +1,6 @@
 # 🚀 TheAndb v3.1.0 Stable Release: Master the DDL
 
-We are thrilled to announce the first major STABLE RELEASE of **TheAndb** – the simplest database migration tool. This version marks a significant milestone in our journey, bringing a refined user experience, robust features, and a fresh new brand identity.
+We are thrilled to announce the first major STABLE RELEASE of **TheAndb** – the Keep Going. Keep Syncing.. This version marks a significant milestone in our journey, bringing a refined user experience, robust features, and a fresh new brand identity.
 
 🌟 **Major Highlights**
 

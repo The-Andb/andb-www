@@ -23,4 +23,4 @@ All notable changes to TheAndb-www project will be documented in this file.
 
 - Improved mobile responsiveness for the documentation and blog sections.
 - Updated dependency versions for better performance and security.
-- Refined messaging to reflect the product's evolution as the "Simplest Database Migration Tool".
+- Refined messaging to reflect the product's evolution as the "Keep Going. Keep Syncing.".
