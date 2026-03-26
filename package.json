@@ -2,7 +2,7 @@
   "name": "@the-andb/landing",
   "private": true,
   "description": "TheAndb - Keep Going. Keep Syncing.",
-  "version": "3.2.6",
+  "version": "3.3.1",
   "license": "SEE LICENSE IN ../LICENSE",
   "type": "module",
   "scripts": {
