@@ -51,21 +51,26 @@
           </p>
         </div>
 
-        <!-- Windows/Linux Section -->
+        <!-- Linux Setup Section -->
         <div class="p-6 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 flex flex-col justify-between">
           <div>
             <h3 class="text-green-600 dark:text-green-400 font-semibold mb-4 flex items-center gap-2">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              Windows & Linux
+              Linux Quick Start
             </h3>
             <div class="space-y-4">
               <div>
-                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1">Windows</span>
-                <p class="text-sm text-gray-600 dark:text-gray-400">{{ $t('guide.win_desc') }}</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Do not try to install it like a .deb package! The AppImage is a portable executable. Open your terminal in the Downloads folder and run:</p>
+                <div class="flex items-center gap-2 group cursor-pointer" @click="copyLinuxFix">
+                  <div class="flex-1 bg-gray-200 dark:bg-black/40 rounded-lg p-3 font-mono text-xs text-green-600 dark:text-green-300 border border-gray-300 dark:border-white/5 break-all group-hover:bg-gray-300 dark:group-hover:bg-black/60 transition-colors">
+                    chmod +x TheAndb-*.AppImage<br/>
+                    ./TheAndb-*.AppImage
+                  </div>
+                </div>
               </div>
-              <div>
-                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1">Linux</span>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Linux support is now officially available! Download the AppImage above, make it executable (`chmod +x`), and run it directly.</p>
+              <div class="pt-3 border-t border-gray-200 dark:border-white/5">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1">Windows</span>
+                <p class="text-xs text-gray-500">Coming soon. We are finalizing the native executable.</p>
               </div>
             </div>
           </div>
@@ -84,6 +89,9 @@
 <script setup lang="ts">
 const copyFix = () => {
   navigator.clipboard.writeText('xattr -cr /Applications/TheAndb.app')
-  // Optional: show toast
+}
+
+const copyLinuxFix = () => {
+  navigator.clipboard.writeText('chmod +x TheAndb-*.AppImage\n./TheAndb-*.AppImage')
 }
 </script>
