@@ -4,10 +4,10 @@
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <a href="https://theandb.xyz" class="flex items-center space-x-2 group">
-          <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20 overflow-hidden transition-transform group-hover:scale-110">
-            <img src="/logo.png" alt="TheAndb Logo" class="w-6 h-6 object-contain" />
+          <div class="w-10 h-10 flex items-center justify-center transition-transform group-hover:scale-110">
+            <img src="/logo.png" alt="TheAndb Logo" class="w-8 h-8 object-contain" />
           </div>
-          <span class="font-bold text-xl tracking-tight text-gray-900 dark:text-white">TheAndb</span>
+          <span class="font-black text-xl tracking-tighter text-gray-900 dark:text-white">TheAndb</span>
         </a>
 
         <!-- Desktop Menu -->
@@ -35,7 +35,7 @@
           >
             {{ locale === 'en' ? 'EN' : 'VI' }}
           </button>
-          <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.3.1" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-[0_4px_14px_0_rgba(37,99,235,0.39)]">
+          <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.3.4" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-[0_4px_14px_0_rgba(37,99,235,0.39)]">
             Download Beta
           </a>
         </div>
