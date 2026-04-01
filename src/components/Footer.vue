@@ -24,7 +24,7 @@
         <h4 class="font-semibold text-gray-800 dark:text-gray-300 mb-4 text-sm uppercase tracking-wider">Resources</h4>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li><a href="#" class="hover:text-blue-400 transition-colors">Documentation</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition-colors">GitHub Issues</a></li>
+          <li><a href="https://github.com/The-Andb/andb-desktop/issues/new" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">GitHub Issues</a></li>
           <li><a href="#" class="hover:text-blue-400 transition-colors">Roadmap</a></li>
         </ul>
       </div>
