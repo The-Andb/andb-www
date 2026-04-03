@@ -2,6 +2,13 @@
 
 All notable changes to TheAndb-www project will be documented in this file.
 
+## [3.3.5] - 2026-04-01
+
+### Added
+- **.deb Packaging**: Native support for Debian and Ubuntu based distributions.
+- **Engine Refactor**: Replaced complex Regex with environment-aware parsing for more accurate DDL normalization.
+- **Sync Strategy**: Synchronized all monorepo components to v3.3.5 to ensure parity.
+
 ## [1.1.1] - 2026-03-16
 
 ### Added

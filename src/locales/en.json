@@ -6,7 +6,7 @@
     "roadmap": "Roadmap"
   },
   "hero": {
-    "version": "v3.1.0 Ecosystem is live (Core 4.0.0-beta.1)",
+    "version": "v3.3.5 Ecosystem is live (deb support added)",
     "opensource": "Free to Use • Privacy Focused • 100% Open Source (MIT)",
     "title_line1": "Stop Tracing Schema.",
     "title_line2": "Master the DDL.",

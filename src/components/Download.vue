@@ -11,13 +11,13 @@
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.3.4" target="_blank" class="block w-full sm:w-auto px-6 py-4 bg-gray-900 dark:bg-white hover:bg-black dark:hover:bg-gray-100 text-white dark:text-black rounded-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-xl shadow-gray-900/20 dark:shadow-white/5 cursor-pointer">
+        <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.3.5" target="_blank" class="block w-full sm:w-auto px-6 py-4 bg-gray-900 dark:bg-white hover:bg-black dark:hover:bg-gray-100 text-white dark:text-black rounded-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-xl shadow-gray-900/20 dark:shadow-white/5 cursor-pointer">
           Download for macOS
           <span class="block text-xs font-normal text-gray-400 dark:text-gray-500 mt-1">Apple Silicon & Intel</span>
         </a>
-        <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.3.4" target="_blank" class="block w-full sm:w-auto px-6 py-4 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-xl font-bold transition-all border border-gray-300 dark:border-gray-700 cursor-pointer">
+        <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v3.3.5" target="_blank" class="block w-full sm:w-auto px-6 py-4 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-xl font-bold transition-all border border-gray-300 dark:border-gray-700 cursor-pointer">
            Download for Linux
-          <span class="block text-xs font-normal text-gray-500 mt-1">AppImage (x64)</span>
+          <span class="block text-xs font-normal text-gray-500 mt-1">AppImage & .deb</span>
         </a>
         <div class="block w-full sm:w-auto px-6 py-4 bg-gray-50 dark:bg-white/5 text-gray-400 dark:text-gray-600 rounded-xl font-bold border border-gray-200 dark:border-white/5 cursor-not-allowed select-none">
            Windows
