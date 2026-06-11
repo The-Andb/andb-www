@@ -4,8 +4,8 @@
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <a href="https://theandb.xyz" class="flex items-center space-x-2 group">
-          <div class="w-10 h-10 flex items-center justify-center transition-transform group-hover:scale-110 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/80 overflow-hidden shadow-sm">
-            <img src="/logo.png" alt="TheAndb Logo" class="w-7 h-7 object-contain mix-blend-multiply dark:mix-blend-normal" />
+          <div class="w-10 h-10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 rounded-xl bg-white dark:bg-black border border-zinc-200/80 dark:border-zinc-800/80 overflow-hidden shadow-[0_2px_8px_rgba(59,130,246,0.08)] dark:shadow-[0_0_12px_rgba(59,130,246,0.25)]">
+            <img src="/logo.png" alt="TheAndb Logo" class="w-7 h-7 object-contain mix-blend-multiply dark:mix-blend-normal dark:invert dark:hue-rotate-180 transition-all" />
           </div>
           <span class="font-black text-xl tracking-tighter text-gray-900 dark:text-white">TheAndb</span>
         </a>
