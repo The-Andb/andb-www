@@ -75,9 +75,9 @@ defineExpose({
 </script>
 
 <template>
-  <div class="min-h-[600px] flex flex-col bg-zinc-950 text-zinc-100 rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl">
+  <div class="min-h-[600px] flex flex-col bg-white dark:bg-zinc-950 text-zinc-800 dark:text-zinc-100 rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-xl dark:shadow-2xl transition-colors duration-300">
     <!-- Header -->
-    <div class="px-6 py-4 border-b border-zinc-800 flex items-center justify-between bg-zinc-900/50">
+    <div class="px-6 py-4 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50 dark:bg-zinc-900/50">
       <div class="flex items-center gap-2">
         <component :is="selectedDoc ? ArrowLeft : Newspaper" 
           class="w-5 h-5 text-cyan-500 cursor-pointer" 
@@ -91,13 +91,13 @@ defineExpose({
 
     <div class="flex flex-1 overflow-hidden">
       <!-- Sidebar Navigation (Only visible when no doc selected) -->
-      <aside v-if="!selectedDoc" class="w-64 border-r border-zinc-800 bg-zinc-900/30 p-4 space-y-2">
+      <aside v-if="!selectedDoc" class="w-64 border-r border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 p-4 space-y-2">
         <button
           v-for="cat in categories"
           :key="cat.id"
           @click="activeCategory = cat.id"
           class="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all"
-          :class="activeCategory === cat.id ? 'bg-zinc-800 text-white shadow-inner' : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50'"
+          :class="activeCategory === cat.id ? 'bg-zinc-200/80 dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/50'"
         >
           <component :is="cat.icon" class="w-4 h-4" />
           {{ cat.name }}
@@ -112,11 +112,11 @@ defineExpose({
             v-for="doc in filteredDocs"
             :key="doc.id"
             @click="selectDoc(doc)"
-            class="group p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 hover:border-cyan-500/50 hover:bg-zinc-800/50 transition-all cursor-pointer relative overflow-hidden"
+            class="group p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 hover:border-cyan-500/50 dark:hover:border-cyan-500/50 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-all cursor-pointer relative overflow-hidden shadow-sm hover:shadow-md"
           >
             <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-            <h3 class="text-base font-medium mb-2 group-hover:text-cyan-400 transition-colors">{{ doc.title }}</h3>
-            <p class="text-sm text-zinc-500 line-clamp-2">Check out the latest features and visual demos in {{ doc.title.toLowerCase() }}.</p>
+            <h3 class="text-base font-semibold mb-2 text-zinc-800 dark:text-zinc-100 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">{{ doc.title }}</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 line-clamp-2">Check out the latest features and visual demos in {{ doc.title.toLowerCase() }}.</p>
           </div>
           
           <div v-if="filteredDocs.length === 0" class="col-span-full py-20 text-center">
@@ -143,27 +143,45 @@ defineExpose({
   background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #e4e4e7;
   border-radius: 10px;
 }
+:root.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #27272a;
+}
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d8;
+}
+:root.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
 }
 
 /* Shiki and custom markdown styles */
 :deep(.prose pre) {
-  @apply bg-zinc-900 border border-zinc-800 rounded-lg p-4 my-6 overflow-x-auto;
+  @apply bg-zinc-950 border border-zinc-800 rounded-lg p-4 my-6 overflow-x-auto text-zinc-100;
 }
 :deep(.prose code) {
-  @apply text-cyan-400 font-mono text-sm;
+  @apply text-cyan-600 dark:text-cyan-400 font-mono text-xs px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800;
+}
+:deep(.prose pre code) {
+  @apply border-none p-0 bg-transparent text-zinc-100;
 }
 :deep(.prose h1) {
-  @apply text-3xl font-bold tracking-tight mb-8;
+  @apply text-3xl font-bold tracking-tight mb-8 text-zinc-900 dark:text-white;
 }
 :deep(.prose h2) {
-  @apply text-xl font-semibold mt-10 mb-4 text-zinc-100;
+  @apply text-xl font-semibold mt-10 mb-4 text-zinc-800 dark:text-zinc-100 border-b border-zinc-200 dark:border-zinc-800 pb-2;
+}
+:deep(.prose h3) {
+  @apply text-lg font-semibold mt-6 mb-3 text-zinc-800 dark:text-zinc-100;
 }
 :deep(.prose p) {
-  @apply text-zinc-400 leading-relaxed mb-4;
+  @apply text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4;
+}
+:deep(.prose ul), :deep(.prose ol) {
+  @apply text-zinc-600 dark:text-zinc-400 mb-4 pl-6 list-disc;
+}
+:deep(.prose li) {
+  @apply mb-2;
 }
 </style>
