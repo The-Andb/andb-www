@@ -5,7 +5,7 @@
         <!-- Logo -->
         <a href="https://theandb.xyz" class="flex items-center space-x-2 group">
           <div class="w-8 h-8 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-            <img src="/logo.png" alt="TheAndb Logo" class="w-8 h-8 object-contain mix-blend-multiply dark:mix-blend-screen dark:invert dark:hue-rotate-180" />
+            <img src="/logo.png" alt="TheAndb Logo" class="w-8 h-8 object-contain rounded-full mix-blend-multiply contrast-125 brightness-105 dark:mix-blend-screen dark:invert dark:hue-rotate-180" />
           </div>
           <span class="font-black text-xl tracking-tighter text-gray-900 dark:text-white">TheAndb</span>
         </a>
