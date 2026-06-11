@@ -3,19 +3,19 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
-        <a href="https://theandb.xyz" class="flex items-center space-x-2 group">
+        <router-link to="/" class="flex items-center space-x-2 group">
           <div class="w-8 h-8 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
             <img src="/logo.png" alt="TheAndb Logo" class="w-8 h-8 object-contain rounded-full mix-blend-multiply contrast-125 brightness-105 dark:mix-blend-screen dark:invert dark:hue-rotate-180" />
           </div>
           <span class="font-black text-xl tracking-tighter text-gray-900 dark:text-white">TheAndb</span>
-        </a>
+        </router-link>
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
-          <a href="#features" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Features</a>
-          <a href="#releases" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Releases</a>
-          <a href="#resources" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Docs</a>
-          <a href="#download" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Installation</a>
+          <router-link to="/#features" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Features</router-link>
+          <router-link to="/#releases" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Releases</router-link>
+          <router-link to="/docs" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Docs</router-link>
+          <router-link to="/#download" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Installation</router-link>
           <a href="https://github.com/The-Andb" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium flex items-center">
             GitHub
             <span class="ml-1 opacity-50">↗</span>
