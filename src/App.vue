@@ -3,6 +3,7 @@ import NavBar from './components/NavBar.vue'
 import Hero from './components/Hero.vue'
 import FeatureStory from './components/FeatureStory.vue'
 import ReleaseHistory from './components/ReleaseHistory.vue'
+import Resources from './components/Resources.vue'
 import Download from './components/Download.vue'
 import Footer from './components/Footer.vue'
 </script>
@@ -22,6 +23,19 @@ import Footer from './components/Footer.vue'
       <Hero />
       <FeatureStory />
       <ReleaseHistory />
+      
+      <div id="resources" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight flex items-center justify-center gap-3">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Documentation & Guides</span>
+          </h2>
+          <p class="text-gray-500 dark:text-gray-400 font-mono text-xs mt-3">
+            Deep dive into setup procedures, hybrid engines, and real-world database migration use cases.
+          </p>
+        </div>
+        <Resources />
+      </div>
+
       <Download />
     </main>
 

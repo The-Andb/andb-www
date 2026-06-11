@@ -14,6 +14,7 @@
         <div class="hidden md:flex items-center space-x-8">
           <a href="#features" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Features</a>
           <a href="#releases" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Releases</a>
+          <a href="#resources" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Docs</a>
           <a href="#download" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium">Installation</a>
           <a href="https://github.com/The-Andb" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors text-sm font-medium flex items-center">
             GitHub
