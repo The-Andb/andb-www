@@ -36,7 +36,7 @@
           >
             {{ locale === 'en' ? 'EN' : 'VI' }}
           </button>
-          <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v4.0.1" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-[0_4px_14px_0_rgba(37,99,235,0.39)]">
+          <a href="https://github.com/The-Andb/andb-desktop/releases/tag/v4.0.2" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-[0_4px_14px_0_rgba(37,99,235,0.39)]">
             Download Beta
           </a>
         </div>
